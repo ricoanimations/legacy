@@ -1,0 +1,23 @@
+{
+  "short_name": "Fantasy Helix",
+  "name": "Fantasy Helix",
+  "icons": [
+    {
+      "src": "https://img.gamedistribution.com/630d7b91a96145949f86128ce8f1c4eb-512x512.jpeg",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "https://img.gamedistribution.com/630d7b91a96145949f86128ce8f1c4eb-512x512.jpeg",
+      "type": "image/png",
+      "sizes": "144x144",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/630d7b91a96145949f86128ce8f1c4eb/index.html",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/630d7b91a96145949f86128ce8f1c4eb/",
+  "theme_color": "#3367D6"
+}

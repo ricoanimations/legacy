@@ -1,0 +1,4474 @@
+{
+  "version": "0.0.11",
+  "vendors": {
+    "fran": {
+      "prebid": {
+        "url": "https://fran-cdn.frvr.com/prebid.7.23.0.js",
+        "analytics": {
+          "enabled": true,
+          "provider": "frvr",
+          "options": {}
+        },
+        "config": {
+          "cache": {
+            "url": "https://usc.cache.frvr.com/cache",
+            "vasttrack": true,
+            "ignoreBidderCacheKey": true
+          },
+          "imasdkTracking": {
+            "enabled": true
+          },
+          "consentManagement": {
+            "gdpr": {
+              "cmpApi": "iab",
+              "timeout": 5000,
+              "allowAuctionWithoutConsent": false
+            }
+          },
+          "s2sConfig": [
+            {
+              "enabled": true,
+              "timeout": 1500,
+              "maxBids": 1,
+              "adapter": "prebidServer",
+              "accountId": "9a3c6c23-1111-1111-1111-123456789123",
+              "allowUnknownBidderCodes": true,
+              "bidders": [
+                "rubicon|s2s",
+                "pubmatic|s2s",
+                "openx|s2s",
+                "criteo|s2s",
+                "oftmedia|s2s",
+                "inmobi",
+                "smartyads|s2s",
+                "sharethrough|s2s",
+                "ix|s2s",
+                "vidoomy|s2s",
+                "gumgum|s2s",
+                "triplelift|s2s",
+                "eplanning|s2s",
+                "cpmstar|s2s",
+                "onetag|s2s"
+              ],
+              "endpoint": {
+                "p1Consent": "https://fran.frvr.com/openrtb2/auction",
+                "noP1Consent": "https://fran.frvr.com/openrtb2/auction"
+              },
+              "syncEndpoint": {
+                "p1Consent": "https://fran.frvr.com/cookie_sync",
+                "noP1Consent": "https://fran.frvr.com/cookie_sync"
+              },
+              "extPrebid": {
+                "cache": {
+                  "vastxml": {
+                    "returnCreative": false
+                  }
+                },
+                "aliases": {
+                  "rubicon|s2s": "rubicon",
+                  "pubmatic|s2s": "pubmatic",
+                  "openx|s2s": "openx",
+                  "criteo|s2s": "criteo",
+                  "oftmedia|s2s": "appnexus",
+                  "smartyads|s2s": "smartyads",
+                  "sharethrough|s2s": "sharethrough",
+                  "ix|s2s": "ix",
+                  "vidoomy|s2s": "vidoomy",
+                  "gumgum|s2s": "gumgum",
+                  "triplelift|s2s": "triplelift",
+                  "eplanning|s2s": "eplanning",
+                  "cpmstar|s2s": "cpmstar",
+                  "onetag|s2s": "onetag"
+                },
+                "targeting": {
+                  "pricegranularity": {
+                    "ranges": [
+                      {
+                        "max": 20,
+                        "increment": 0.01
+                      },
+                      {
+                        "max": 40.2,
+                        "increment": 0.1
+                      },
+                      {
+                        "max": 60.25,
+                        "increment": 0.25
+                      },
+                      {
+                        "max": 100,
+                        "increment": 0.5
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "schain": {
+            "validation": "strict",
+            "config": {
+              "ver": "1.0",
+              "complete": 1,
+              "nodes": []
+            }
+          },
+          "userSync": {
+            "userIds": [
+              {
+                "name": "pubCommonId",
+                "storage": {
+                  "type": "cookie",
+                  "name": "_pubcid",
+                  "expires": 365
+                }
+              },
+              {
+                "name": "criteo"
+              },
+              {
+                "name": "id5Id",
+                "params": {
+                  "partner": 1289
+                },
+                "storage": {
+                  "type": "html5",
+                  "name": "id5id",
+                  "expires": 90,
+                  "refreshInSeconds": 28800
+                }
+              },
+              {
+                "name": "lotamePanoramaId"
+              }
+            ],
+            "filterSettings": {
+              "iframe": {
+                "bidders": "*",
+                "filter": "include"
+              },
+              "image": {
+                "bidders": "*",
+                "filter": "include"
+              }
+            },
+            "auctionDelay": 250,
+            "syncDelay": 3000,
+            "iframeEnabled": true,
+            "syncEnabled": true,
+            "aliasSyncEnabled": true
+          },
+          "userIdTargeting": {
+            "GAM": true
+          },
+          "bidderTimeout": 1500,
+          "currency": {
+            "adServerCurrency": "EUR",
+            "conversionRateFile": "https://cdn.jsdelivr.net/gh/prebid/currency-file@1/latest.json",
+            "granularityMultiplier": 1,
+            "bidderCurrencyDefault": {
+              "smartyads": "USD"
+            }
+          },
+          "enableSendAllBids": false,
+          "priceGranularity": {
+            "buckets": [
+              {
+                "max": 20,
+                "increment": 0.01
+              },
+              {
+                "max": 40.2,
+                "increment": 0.1
+              },
+              {
+                "max": 60.25,
+                "increment": 0.25
+              },
+              {
+                "max": 100,
+                "increment": 0.5
+              }
+            ]
+          },
+          "deviceAccess": true,
+          "useBidCache": true,
+          "ortb2": {
+            "site": {
+              "name": "krunker_io",
+              "domain": "krunker.io",
+              "cat": [
+                "IAB9-30"
+              ],
+              "sectioncat": [
+                "IAB9-30"
+              ],
+              "pagecat": [
+                "IAB9-30"
+              ],
+              "page": "https://krunker.io/",
+              "ref": ""
+            }
+          },
+          "bidderSettings": {
+            "standard": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "ix": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "rubicon": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "pubmatic": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "openx": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "criteo": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "appnexus": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "smartyads": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "sharethrough": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "vidoomy": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "gumgum": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "triplelift": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "eplanning": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "brightcom": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "cpmstar": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            },
+            "onetag": {
+              "storageAllowed": true,
+              "allowAlternateBidderCodes": true
+            }
+          }
+        }
+      },
+      "uam": {
+        "pubID": "a0c80cc5-5232-44a0-981f-0db953bdb1ca"
+      },
+      "pollfish": {
+        "apiKey": "8685bdec-f922-49d5-b7f9-58850c5c0a3a"
+      }
+    }
+  },
+  "providers": [
+    {
+      "name": "fran#survey",
+      "type": "survey",
+      "priority": 1,
+      "config": {
+        "blocking": true,
+        "adUnit": {
+          "code": "krunker-survey-survey-default"
+        }
+      }
+    },
+    {
+      "name": "fran#display",
+      "type": "reward",
+      "priority": 3,
+      "config": {
+        "pageUrl": "https://krunker.io",
+        "adUnit": {
+          "floorsopt": true,
+          "code": "/21823819281/krunker-display-reward-default"
+        }
+      }
+    },
+    {
+      "name": "fran#video",
+      "type": "reward",
+      "priority": 2,
+      "config": {
+        "pageUrl": "https://krunker.io",
+        "adUnit": {
+          "floorsopt": true,
+          "code": "/21823819281/krunker-video-reward-default",
+          "mediaTypes": {
+            "video": {
+              "placement": 1,
+              "plcmt": 1,
+              "context": "instream",
+              "playerSize": [],
+              "mimes": [
+                "video/mp4",
+                "video/3gpp",
+                "video/mpeg",
+                "video/ogg",
+                "video/quicktime",
+                "video/webm",
+                "application/javascript"
+              ],
+              "protocols": [
+                2,
+                3,
+                5,
+                6,
+                7,
+                8
+              ],
+              "playbackmethod": [
+                3
+              ],
+              "skip": 1,
+              "startdelay": 0,
+              "linearity": 1,
+              "api": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ]
+            }
+          },
+          "ortb2Imp": {
+            "rwdd": 1,
+            "instl": 1
+          },
+          "bids": [
+            {
+              "bidder": "rubicon",
+              "params": {
+                "accountId": "24342",
+                "siteId": "440788",
+                "zoneId": "2533298",
+                "video": {
+                  "language": "en",
+                  "size_id": 201
+                }
+              }
+            },
+            {
+              "bidder": "rubicon|s2s",
+              "params": {
+                "accountId": "24342",
+                "siteId": "440788",
+                "zoneId": "2533298",
+                "video": {
+                  "language": "en",
+                  "size_id": 201
+                }
+              }
+            },
+            {
+              "bidder": "pubmatic",
+              "params": {
+                "publisherId": "162156",
+                "adSlot": "4649644"
+              }
+            },
+            {
+              "bidder": "pubmatic|s2s",
+              "params": {
+                "publisherId": "162156",
+                "adSlot": "4649644"
+              }
+            },
+            {
+              "bidder": "openx",
+              "params": {
+                "unit": "557919898",
+                "delDomain": "frvrltd-d.openx.net"
+              }
+            },
+            {
+              "bidder": "openx|s2s",
+              "params": {
+                "unit": "557919898",
+                "delDomain": "frvrltd-d.openx.net"
+              }
+            },
+            {
+              "bidder": "inmobi",
+              "params": {
+                "plc": "1665461238510"
+              }
+            },
+            {
+              "bidder": "criteo",
+              "params": {
+                "networkId": 11611,
+                "zoneId": 1696887,
+                "publisherSubId": "frvr-krunker_io-krunker-video-reward-default"
+              }
+            },
+            {
+              "bidder": "criteo|s2s",
+              "params": {
+                "networkId": 11611,
+                "zoneId": 1696887,
+                "publisherSubId": "frvr-krunker_io-krunker-video-reward-default"
+              }
+            },
+            {
+              "bidder": "oftmedia",
+              "params": {
+                "placementId": 27861874,
+                "usePaymentRule": true
+              }
+            },
+            {
+              "bidder": "oftmedia|s2s",
+              "params": {
+                "placement_id": 27861874,
+                "usePaymentRule": true
+              }
+            },
+            {
+              "bidder": "smartyads",
+              "params": {
+                "host": "n2",
+                "accountid": "FiG96PjfTTPoz8cWssv5",
+                "placementId": "frvr_video",
+                "sourceid": "frvr_video"
+              }
+            },
+            {
+              "bidder": "smartyads|s2s",
+              "params": {
+                "host": "n2",
+                "accountid": "FiG96PjfTTPoz8cWssv5",
+                "placementId": "frvr_video",
+                "sourceid": "frvr_video"
+              }
+            },
+            {
+              "bidder": "smartyads",
+              "params": {
+                "host": "n1",
+                "accountid": "tUtAxXDv5DBDIMhSFhA4",
+                "placementId": "frvr_video",
+                "sourceid": "frvr_video"
+              }
+            },
+            {
+              "bidder": "smartyads|s2s",
+              "params": {
+                "host": "n1",
+                "accountid": "tUtAxXDv5DBDIMhSFhA4",
+                "placementId": "frvr_video",
+                "sourceid": "frvr_video"
+              }
+            },
+            {
+              "bidder": "sharethrough",
+              "params": {
+                "pkey": "1MWTC2pkvq5YZD6xvHbhIS1P"
+              }
+            },
+            {
+              "bidder": "sharethrough|s2s",
+              "params": {
+                "pkey": "1MWTC2pkvq5YZD6xvHbhIS1P"
+              }
+            },
+            {
+              "bidder": "sharethrough",
+              "params": {
+                "pkey": "3csUsY2BwVjJEnlDHYQt18Nm"
+              }
+            },
+            {
+              "bidder": "sharethrough|s2s",
+              "params": {
+                "pkey": "3csUsY2BwVjJEnlDHYQt18Nm"
+              }
+            },
+            {
+              "bidder": "ix",
+              "params": {
+                "siteId": "928006"
+              }
+            },
+            {
+              "bidder": "ix|s2s",
+              "params": {
+                "siteId": "928006"
+              }
+            },
+            {
+              "bidder": "vidoomy",
+              "params": {
+                "id": 52645,
+                "pid": 62348
+              }
+            },
+            {
+              "bidder": "vidoomy|s2s",
+              "params": {
+                "zoneId": "52645"
+              }
+            },
+            {
+              "bidder": "gumgum",
+              "params": {
+                "zone": "py6b4mh0",
+                "slot": 952310
+              }
+            },
+            {
+              "bidder": "gumgum|s2s",
+              "params": {
+                "zone": "py6b4mh0",
+                "slot": 952310
+              }
+            },
+            {
+              "bidder": "triplelift",
+              "params": {
+                "inventoryCode": "frvr_video_reward_ron"
+              }
+            },
+            {
+              "bidder": "triplelift|s2s",
+              "params": {
+                "inventoryCode": "frvr_video_reward_ron"
+              }
+            },
+            {
+              "bidder": "eplanning",
+              "params": {
+                "ci": "5f846"
+              }
+            },
+            {
+              "bidder": "eplanning|s2s",
+              "params": {
+                "ci": "5f846"
+              }
+            },
+            {
+              "bidder": "brightcom",
+              "params": {
+                "publisherId": "20752"
+              }
+            },
+            {
+              "bidder": "cpmstar",
+              "params": {
+                "placementId": 87378
+              }
+            },
+            {
+              "bidder": "cpmstar|s2s",
+              "params": {
+                "placementId": 87378
+              }
+            },
+            {
+              "bidder": "onetag",
+              "params": {
+                "pubId": "7f4d2923ea87500"
+              }
+            },
+            {
+              "bidder": "onetag|s2s",
+              "params": {
+                "pubId": "7f4d2923ea87500"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "fran#display",
+      "type": "banner",
+      "priority": 1,
+      "config": {
+        "pageUrl": "https://krunker.io",
+        "adUnits": [
+          {
+            "floorsopt": true,
+            "code": "/21823819281/krunker-display-banner-krunkerio_728x90_1",
+            "mediaTypes": {
+              "banner": {
+                "sizes": [
+                  [
+                    300,
+                    50
+                  ],
+                  [
+                    320,
+                    50
+                  ],
+                  [
+                    468,
+                    60
+                  ],
+                  [
+                    728,
+                    90
+                  ],
+                  [
+                    300,
+                    100
+                  ],
+                  [
+                    320,
+                    100
+                  ]
+                ]
+              }
+            },
+            "bids": [
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@468x60"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@728x90"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@468x60"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@728x90"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x100"
+                }
+              },
+              {
+                "bidder": "rubicon",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533306"
+                }
+              },
+              {
+                "bidder": "rubicon|s2s",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533306"
+                }
+              },
+              {
+                "bidder": "openx",
+                "params": {
+                  "unit": "557919893",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "openx|s2s",
+                "params": {
+                  "unit": "557919893",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "inmobi",
+                "params": {
+                  "plc": "1665276943539"
+                }
+              },
+              {
+                "bidder": "criteo",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_728x90_1"
+                }
+              },
+              {
+                "bidder": "criteo|s2s",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_728x90_1"
+                }
+              },
+              {
+                "bidder": "oftmedia",
+                "params": {
+                  "placementId": 28082135,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "oftmedia|s2s",
+                "params": {
+                  "placement_id": 28082135,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "ox2SmHVhq3LxFEOaz8V4CZaH"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "ox2SmHVhq3LxFEOaz8V4CZaH"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "zbNMIq8tWzcIie51cpfgkoOM"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "zbNMIq8tWzcIie51cpfgkoOM"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "G1PoA5QGiuzpYEKhdNeA1Plp"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "b5EwuWu91oQM5ThHU95ChLly"
+                }
+              },
+              {
+                "bidder": "limelightDigital",
+                "params": {
+                  "host": "ads-246u6.iionads.com",
+                  "adUnitId": "42000",
+                  "adUnitType": "banner"
+                }
+              },
+              {
+                "bidder": "ix",
+                "params": {
+                  "siteId": "928008"
+                }
+              },
+              {
+                "bidder": "ix|s2s",
+                "params": {
+                  "siteId": "928008"
+                }
+              },
+              {
+                "bidder": "vidoomy",
+                "params": {
+                  "id": 52646,
+                  "pid": 62348
+                }
+              },
+              {
+                "bidder": "vidoomy|s2s",
+                "params": {
+                  "zoneId": "52646"
+                }
+              },
+              {
+                "bidder": "gumgum",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952316
+                }
+              },
+              {
+                "bidder": "gumgum|s2s",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952316
+                }
+              },
+              {
+                "bidder": "triplelift",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "triplelift|s2s",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "eplanning",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "eplanning|s2s",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "brightcom",
+                "params": {
+                  "publisherId": "20752"
+                }
+              },
+              {
+                "bidder": "cpmstar",
+                "params": {
+                  "placementId": 87380
+                }
+              },
+              {
+                "bidder": "cpmstar|s2s",
+                "params": {
+                  "placementId": 87380
+                }
+              },
+              {
+                "bidder": "onetag",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              },
+              {
+                "bidder": "onetag|s2s",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              }
+            ]
+          },
+          {
+            "floorsopt": true,
+            "code": "/21823819281/krunker-display-banner-krunkerio_728x90_2",
+            "mediaTypes": {
+              "banner": {
+                "sizes": [
+                  [
+                    300,
+                    50
+                  ],
+                  [
+                    320,
+                    50
+                  ],
+                  [
+                    468,
+                    60
+                  ],
+                  [
+                    728,
+                    90
+                  ],
+                  [
+                    300,
+                    100
+                  ],
+                  [
+                    320,
+                    100
+                  ]
+                ]
+              }
+            },
+            "bids": [
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@468x60"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@728x90"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@468x60"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@728x90"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x100"
+                }
+              },
+              {
+                "bidder": "rubicon",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533306"
+                }
+              },
+              {
+                "bidder": "rubicon|s2s",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533306"
+                }
+              },
+              {
+                "bidder": "openx",
+                "params": {
+                  "unit": "557919893",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "openx|s2s",
+                "params": {
+                  "unit": "557919893",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "inmobi",
+                "params": {
+                  "plc": "1665276943539"
+                }
+              },
+              {
+                "bidder": "criteo",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_728x90_1"
+                }
+              },
+              {
+                "bidder": "criteo|s2s",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_728x90_1"
+                }
+              },
+              {
+                "bidder": "oftmedia",
+                "params": {
+                  "placementId": 28082135,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "oftmedia|s2s",
+                "params": {
+                  "placement_id": 28082135,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "ox2SmHVhq3LxFEOaz8V4CZaH"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "ox2SmHVhq3LxFEOaz8V4CZaH"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "zbNMIq8tWzcIie51cpfgkoOM"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "zbNMIq8tWzcIie51cpfgkoOM"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "G1PoA5QGiuzpYEKhdNeA1Plp"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "b5EwuWu91oQM5ThHU95ChLly"
+                }
+              },
+              {
+                "bidder": "limelightDigital",
+                "params": {
+                  "host": "ads-246u6.iionads.com",
+                  "adUnitId": "42000",
+                  "adUnitType": "banner"
+                }
+              },
+              {
+                "bidder": "ix",
+                "params": {
+                  "siteId": "928008"
+                }
+              },
+              {
+                "bidder": "ix|s2s",
+                "params": {
+                  "siteId": "928008"
+                }
+              },
+              {
+                "bidder": "vidoomy",
+                "params": {
+                  "id": 52646,
+                  "pid": 62348
+                }
+              },
+              {
+                "bidder": "vidoomy|s2s",
+                "params": {
+                  "zoneId": "52646"
+                }
+              },
+              {
+                "bidder": "gumgum",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "gumgum|s2s",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "triplelift",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "triplelift|s2s",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "eplanning",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "eplanning|s2s",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "brightcom",
+                "params": {
+                  "publisherId": "20752"
+                }
+              },
+              {
+                "bidder": "cpmstar",
+                "params": {
+                  "placementId": 87380
+                }
+              },
+              {
+                "bidder": "cpmstar|s2s",
+                "params": {
+                  "placementId": 87380
+                }
+              },
+              {
+                "bidder": "onetag",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              },
+              {
+                "bidder": "onetag|s2s",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              }
+            ]
+          },
+          {
+            "floorsopt": true,
+            "code": "/21823819281/krunker-display-banner-krunkerio_728x90_3",
+            "mediaTypes": {
+              "banner": {
+                "sizes": [
+                  [
+                    300,
+                    50
+                  ],
+                  [
+                    320,
+                    50
+                  ],
+                  [
+                    468,
+                    60
+                  ],
+                  [
+                    728,
+                    90
+                  ],
+                  [
+                    300,
+                    100
+                  ],
+                  [
+                    320,
+                    100
+                  ]
+                ]
+              }
+            },
+            "bids": [
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@468x60"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@728x90"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@468x60"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@728x90"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x100"
+                }
+              },
+              {
+                "bidder": "rubicon",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533306"
+                }
+              },
+              {
+                "bidder": "rubicon|s2s",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533306"
+                }
+              },
+              {
+                "bidder": "openx",
+                "params": {
+                  "unit": "557919893",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "openx|s2s",
+                "params": {
+                  "unit": "557919893",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "inmobi",
+                "params": {
+                  "plc": "1665276943539"
+                }
+              },
+              {
+                "bidder": "criteo",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_728x90_1"
+                }
+              },
+              {
+                "bidder": "criteo|s2s",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_728x90_1"
+                }
+              },
+              {
+                "bidder": "oftmedia",
+                "params": {
+                  "placementId": 28082135,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "oftmedia|s2s",
+                "params": {
+                  "placement_id": 28082135,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "ox2SmHVhq3LxFEOaz8V4CZaH"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "ox2SmHVhq3LxFEOaz8V4CZaH"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "zbNMIq8tWzcIie51cpfgkoOM"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "zbNMIq8tWzcIie51cpfgkoOM"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "G1PoA5QGiuzpYEKhdNeA1Plp"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "b5EwuWu91oQM5ThHU95ChLly"
+                }
+              },
+              {
+                "bidder": "limelightDigital",
+                "params": {
+                  "host": "ads-246u6.iionads.com",
+                  "adUnitId": "42000",
+                  "adUnitType": "banner"
+                }
+              },
+              {
+                "bidder": "ix",
+                "params": {
+                  "siteId": "928008"
+                }
+              },
+              {
+                "bidder": "ix|s2s",
+                "params": {
+                  "siteId": "928008"
+                }
+              },
+              {
+                "bidder": "vidoomy",
+                "params": {
+                  "id": 52646,
+                  "pid": 62348
+                }
+              },
+              {
+                "bidder": "vidoomy|s2s",
+                "params": {
+                  "zoneId": "52646"
+                }
+              },
+              {
+                "bidder": "gumgum",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "gumgum|s2s",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "triplelift",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "triplelift|s2s",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "eplanning",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "eplanning|s2s",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "brightcom",
+                "params": {
+                  "publisherId": "20752"
+                }
+              },
+              {
+                "bidder": "cpmstar",
+                "params": {
+                  "placementId": 87380
+                }
+              },
+              {
+                "bidder": "cpmstar|s2s",
+                "params": {
+                  "placementId": 87380
+                }
+              }
+            ]
+          },
+          {
+            "floorsopt": true,
+            "code": "/21823819281/krunker-display-banner-krunkerio_728x90_4",
+            "mediaTypes": {
+              "banner": {
+                "sizes": [
+                  [
+                    300,
+                    50
+                  ],
+                  [
+                    320,
+                    50
+                  ],
+                  [
+                    468,
+                    60
+                  ],
+                  [
+                    728,
+                    90
+                  ],
+                  [
+                    300,
+                    100
+                  ],
+                  [
+                    320,
+                    100
+                  ]
+                ]
+              }
+            },
+            "bids": [
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@468x60"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@728x90"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@468x60"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@728x90"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649652@320x100"
+                }
+              },
+              {
+                "bidder": "rubicon",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533306"
+                }
+              },
+              {
+                "bidder": "rubicon|s2s",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533306"
+                }
+              },
+              {
+                "bidder": "openx",
+                "params": {
+                  "unit": "557919893",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "openx|s2s",
+                "params": {
+                  "unit": "557919893",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "inmobi",
+                "params": {
+                  "plc": "1665276943539"
+                }
+              },
+              {
+                "bidder": "criteo",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_728x90_1"
+                }
+              },
+              {
+                "bidder": "criteo|s2s",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_728x90_1"
+                }
+              },
+              {
+                "bidder": "oftmedia",
+                "params": {
+                  "placementId": 28082135,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "oftmedia|s2s",
+                "params": {
+                  "placement_id": 28082135,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "ox2SmHVhq3LxFEOaz8V4CZaH"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "ox2SmHVhq3LxFEOaz8V4CZaH"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "zbNMIq8tWzcIie51cpfgkoOM"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "zbNMIq8tWzcIie51cpfgkoOM"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "G1PoA5QGiuzpYEKhdNeA1Plp"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "b5EwuWu91oQM5ThHU95ChLly"
+                }
+              },
+              {
+                "bidder": "limelightDigital",
+                "params": {
+                  "host": "ads-246u6.iionads.com",
+                  "adUnitId": "42000",
+                  "adUnitType": "banner"
+                }
+              },
+              {
+                "bidder": "ix",
+                "params": {
+                  "siteId": "928008"
+                }
+              },
+              {
+                "bidder": "ix|s2s",
+                "params": {
+                  "siteId": "928008"
+                }
+              },
+              {
+                "bidder": "vidoomy",
+                "params": {
+                  "id": 52646,
+                  "pid": 62348
+                }
+              },
+              {
+                "bidder": "vidoomy|s2s",
+                "params": {
+                  "zoneId": "52646"
+                }
+              },
+              {
+                "bidder": "gumgum",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "gumgum|s2s",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "triplelift",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "triplelift|s2s",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "eplanning",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "eplanning|s2s",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "brightcom",
+                "params": {
+                  "publisherId": "20752"
+                }
+              },
+              {
+                "bidder": "cpmstar",
+                "params": {
+                  "placementId": 87380
+                }
+              },
+              {
+                "bidder": "cpmstar|s2s",
+                "params": {
+                  "placementId": 87380
+                }
+              },
+              {
+                "bidder": "onetag",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              },
+              {
+                "bidder": "onetag|s2s",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              }
+            ]
+          },
+          {
+            "floorsopt": true,
+            "code": "/21823819281/krunker-display-banner-krunkerio_300x250_4",
+            "mediaTypes": {
+              "banner": {
+                "sizes": [
+                  [
+                    300,
+                    50
+                  ],
+                  [
+                    320,
+                    50
+                  ],
+                  [
+                    300,
+                    100
+                  ],
+                  [
+                    320,
+                    100
+                  ],
+                  [
+                    300,
+                    250
+                  ],
+                  [
+                    336,
+                    280
+                  ]
+                ]
+              }
+            },
+            "bids": [
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649648@300x250"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649648@300x250"
+                }
+              },
+              {
+                "bidder": "rubicon",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533304"
+                }
+              },
+              {
+                "bidder": "rubicon|s2s",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533304"
+                }
+              },
+              {
+                "bidder": "openx",
+                "params": {
+                  "unit": "557919896",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "openx|s2s",
+                "params": {
+                  "unit": "557919896",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "inmobi",
+                "params": {
+                  "plc": "1666664556148"
+                }
+              },
+              {
+                "bidder": "criteo",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_300x250_4"
+                }
+              },
+              {
+                "bidder": "criteo|s2s",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_300x250_4"
+                }
+              },
+              {
+                "bidder": "oftmedia",
+                "params": {
+                  "placementId": 28082134,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "oftmedia|s2s",
+                "params": {
+                  "placement_id": 28082134,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "zyqzH8BNmwBsZKu3Np8vy7oE"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "mpwl7oGrYFi5ZuMnNWICacmj"
+                }
+              },
+              {
+                "bidder": "limelightDigital",
+                "params": {
+                  "host": "ads-246u6.iionads.com",
+                  "adUnitId": "42000",
+                  "adUnitType": "banner"
+                }
+              },
+              {
+                "bidder": "ix",
+                "params": {
+                  "siteId": "928009"
+                }
+              },
+              {
+                "bidder": "ix|s2s",
+                "params": {
+                  "siteId": "928009"
+                }
+              },
+              {
+                "bidder": "vidoomy",
+                "params": {
+                  "id": 52647,
+                  "pid": 62348
+                }
+              },
+              {
+                "bidder": "vidoomy|s2s",
+                "params": {
+                  "zoneId": "52647"
+                }
+              },
+              {
+                "bidder": "gumgum",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "gumgum|s2s",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "triplelift",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "triplelift|s2s",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "eplanning",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "eplanning|s2s",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "brightcom",
+                "params": {
+                  "publisherId": "20752"
+                }
+              },
+              {
+                "bidder": "cpmstar",
+                "params": {
+                  "placementId": 87379
+                }
+              },
+              {
+                "bidder": "cpmstar|s2s",
+                "params": {
+                  "placementId": 87379
+                }
+              }
+            ]
+          },
+          {
+            "floorsopt": true,
+            "code": "/21823819281/krunker-display-banner-krunkerio_300x250_3",
+            "mediaTypes": {
+              "banner": {
+                "sizes": [
+                  [
+                    300,
+                    50
+                  ],
+                  [
+                    320,
+                    50
+                  ],
+                  [
+                    300,
+                    100
+                  ],
+                  [
+                    320,
+                    100
+                  ],
+                  [
+                    300,
+                    250
+                  ],
+                  [
+                    336,
+                    280
+                  ]
+                ]
+              }
+            },
+            "bids": [
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649647@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649647@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649647@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649647@320x100"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649647@300x250"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649647@336x280"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649647@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649647@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649647@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649647@320x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649647@300x250"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649647@336x280"
+                }
+              },
+              {
+                "bidder": "rubicon",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533302"
+                }
+              },
+              {
+                "bidder": "rubicon|s2s",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533302"
+                }
+              },
+              {
+                "bidder": "openx",
+                "params": {
+                  "unit": "557919895",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "openx|s2s",
+                "params": {
+                  "unit": "557919895",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "inmobi",
+                "params": {
+                  "plc": "1666861512133"
+                }
+              },
+              {
+                "bidder": "criteo",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_300x250_3"
+                }
+              },
+              {
+                "bidder": "criteo|s2s",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_300x250_3"
+                }
+              },
+              {
+                "bidder": "oftmedia",
+                "params": {
+                  "placementId": 28082106,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "oftmedia|s2s",
+                "params": {
+                  "placement_id": 28082106,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "G1PoA5QGiuzpYEKhdNeA1Plp"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "b5EwuWu91oQM5ThHU95ChLly"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "zyqzH8BNmwBsZKu3Np8vy7oE"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "mpwl7oGrYFi5ZuMnNWICacmj"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "I6LP2i9nFr4i70WKnKrZuwFO"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "ule5dCl2SIoYQWdAANhwL2uT"
+                }
+              },
+              {
+                "bidder": "limelightDigital",
+                "params": {
+                  "host": "ads-246u6.iionads.com",
+                  "adUnitId": "42000",
+                  "adUnitType": "banner"
+                }
+              },
+              {
+                "bidder": "ix",
+                "params": {
+                  "siteId": "928010"
+                }
+              },
+              {
+                "bidder": "ix|s2s",
+                "params": {
+                  "siteId": "928010"
+                }
+              },
+              {
+                "bidder": "vidoomy",
+                "params": {
+                  "id": 52648,
+                  "pid": 62348
+                }
+              },
+              {
+                "bidder": "vidoomy|s2s",
+                "params": {
+                  "zoneId": "52648"
+                }
+              },
+              {
+                "bidder": "gumgum",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "gumgum|s2s",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "triplelift",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "triplelift|s2s",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "eplanning",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "eplanning|s2s",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "brightcom",
+                "params": {
+                  "publisherId": "20752"
+                }
+              },
+              {
+                "bidder": "cpmstar",
+                "params": {
+                  "placementId": 87379
+                }
+              },
+              {
+                "bidder": "cpmstar|s2s",
+                "params": {
+                  "placementId": 87379
+                }
+              },
+              {
+                "bidder": "onetag",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              },
+              {
+                "bidder": "onetag|s2s",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              }
+            ]
+          },
+          {
+            "floorsopt": true,
+            "code": "/21823819281/krunker-display-banner-krunkerio_300x250_2",
+            "mediaTypes": {
+              "banner": {
+                "sizes": [
+                  [
+                    300,
+                    50
+                  ],
+                  [
+                    320,
+                    50
+                  ],
+                  [
+                    300,
+                    100
+                  ],
+                  [
+                    320,
+                    100
+                  ],
+                  [
+                    300,
+                    250
+                  ],
+                  [
+                    336,
+                    280
+                  ]
+                ]
+              }
+            },
+            "bids": [
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@320x100"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x250"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@336x280"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@320x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x250"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@336x280"
+                }
+              },
+              {
+                "bidder": "rubicon",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533300"
+                }
+              },
+              {
+                "bidder": "rubicon|s2s",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533300"
+                }
+              },
+              {
+                "bidder": "openx",
+                "params": {
+                  "unit": "557919894",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "openx|s2s",
+                "params": {
+                  "unit": "557919894",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "inmobi",
+                "params": {
+                  "plc": "1666215920105"
+                }
+              },
+              {
+                "bidder": "criteo",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_300x250_2"
+                }
+              },
+              {
+                "bidder": "criteo|s2s",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_300x250_2"
+                }
+              },
+              {
+                "bidder": "oftmedia",
+                "params": {
+                  "placementId": 28082105,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "oftmedia|s2s",
+                "params": {
+                  "placement_id": 28082105,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "G1PoA5QGiuzpYEKhdNeA1Plp"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "b5EwuWu91oQM5ThHU95ChLly"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "zyqzH8BNmwBsZKu3Np8vy7oE"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "mpwl7oGrYFi5ZuMnNWICacmj"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "I6LP2i9nFr4i70WKnKrZuwFO"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "ule5dCl2SIoYQWdAANhwL2uT"
+                }
+              },
+              {
+                "bidder": "limelightDigital",
+                "params": {
+                  "host": "ads-246u6.iionads.com",
+                  "adUnitId": "42000",
+                  "adUnitType": "banner"
+                }
+              },
+              {
+                "bidder": "ix",
+                "params": {
+                  "siteId": "928011"
+                }
+              },
+              {
+                "bidder": "ix|s2s",
+                "params": {
+                  "siteId": "928011"
+                }
+              },
+              {
+                "bidder": "vidoomy",
+                "params": {
+                  "id": 52649,
+                  "pid": 62348
+                }
+              },
+              {
+                "bidder": "vidoomy|s2s",
+                "params": {
+                  "zoneId": "52649"
+                }
+              },
+              {
+                "bidder": "gumgum",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "gumgum|s2s",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "triplelift",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "triplelift|s2s",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "eplanning",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "eplanning|s2s",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "brightcom",
+                "params": {
+                  "publisherId": "20752"
+                }
+              },
+              {
+                "bidder": "cpmstar",
+                "params": {
+                  "placementId": 87379
+                }
+              },
+              {
+                "bidder": "cpmstar|s2s",
+                "params": {
+                  "placementId": 87379
+                }
+              },
+              {
+                "bidder": "onetag",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              },
+              {
+                "bidder": "onetag|s2s",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              }
+            ]
+          },
+          {
+            "floorsopt": true,
+            "code": "/21823819281/krunker-display-banner-krunkerio_300x250_5",
+            "mediaTypes": {
+              "banner": {
+                "sizes": [
+                  [
+                    300,
+                    50
+                  ],
+                  [
+                    320,
+                    50
+                  ],
+                  [
+                    300,
+                    100
+                  ],
+                  [
+                    320,
+                    100
+                  ],
+                  [
+                    300,
+                    250
+                  ],
+                  [
+                    336,
+                    280
+                  ]
+                ]
+              }
+            },
+            "bids": [
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@320x100"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x250"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@336x280"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@320x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x250"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@336x280"
+                }
+              },
+              {
+                "bidder": "rubicon",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533300"
+                }
+              },
+              {
+                "bidder": "rubicon|s2s",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533300"
+                }
+              },
+              {
+                "bidder": "openx",
+                "params": {
+                  "unit": "557919894",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "openx|s2s",
+                "params": {
+                  "unit": "557919894",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "inmobi",
+                "params": {
+                  "plc": "1666215920105"
+                }
+              },
+              {
+                "bidder": "criteo",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_300x250_2"
+                }
+              },
+              {
+                "bidder": "criteo|s2s",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_300x250_2"
+                }
+              },
+              {
+                "bidder": "oftmedia",
+                "params": {
+                  "placementId": 28082105,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "oftmedia|s2s",
+                "params": {
+                  "placement_id": 28082105,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "G1PoA5QGiuzpYEKhdNeA1Plp"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "b5EwuWu91oQM5ThHU95ChLly"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "zyqzH8BNmwBsZKu3Np8vy7oE"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "mpwl7oGrYFi5ZuMnNWICacmj"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "I6LP2i9nFr4i70WKnKrZuwFO"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "ule5dCl2SIoYQWdAANhwL2uT"
+                }
+              },
+              {
+                "bidder": "limelightDigital",
+                "params": {
+                  "host": "ads-246u6.iionads.com",
+                  "adUnitId": "42000",
+                  "adUnitType": "banner"
+                }
+              },
+              {
+                "bidder": "ix",
+                "params": {
+                  "siteId": "928011"
+                }
+              },
+              {
+                "bidder": "ix|s2s",
+                "params": {
+                  "siteId": "928011"
+                }
+              },
+              {
+                "bidder": "vidoomy",
+                "params": {
+                  "id": 52649,
+                  "pid": 62348
+                }
+              },
+              {
+                "bidder": "vidoomy|s2s",
+                "params": {
+                  "zoneId": "52649"
+                }
+              },
+              {
+                "bidder": "gumgum",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "gumgum|s2s",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "triplelift",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "triplelift|s2s",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "eplanning",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "eplanning|s2s",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "brightcom",
+                "params": {
+                  "publisherId": "20752"
+                }
+              },
+              {
+                "bidder": "cpmstar",
+                "params": {
+                  "placementId": 87379
+                }
+              },
+              {
+                "bidder": "cpmstar|s2s",
+                "params": {
+                  "placementId": 87379
+                }
+              },
+              {
+                "bidder": "onetag",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              },
+              {
+                "bidder": "onetag|s2s",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              }
+            ]
+          },
+          {
+            "floorsopt": true,
+            "code": "/21823819281/krunker-display-banner-krunkerio_300x250_6",
+            "mediaTypes": {
+              "banner": {
+                "sizes": [
+                  [
+                    300,
+                    50
+                  ],
+                  [
+                    320,
+                    50
+                  ],
+                  [
+                    300,
+                    100
+                  ],
+                  [
+                    320,
+                    100
+                  ],
+                  [
+                    300,
+                    250
+                  ],
+                  [
+                    336,
+                    280
+                  ]
+                ]
+              }
+            },
+            "bids": [
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@320x100"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x250"
+                }
+              },
+              {
+                "bidder": "pubmatic",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@336x280"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@320x50"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@320x100"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@300x250"
+                }
+              },
+              {
+                "bidder": "pubmatic|s2s",
+                "params": {
+                  "publisherId": "162156",
+                  "adSlot": "4649646@336x280"
+                }
+              },
+              {
+                "bidder": "rubicon",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533300"
+                }
+              },
+              {
+                "bidder": "rubicon|s2s",
+                "params": {
+                  "accountId": "24342",
+                  "siteId": "440788",
+                  "zoneId": "2533300"
+                }
+              },
+              {
+                "bidder": "openx",
+                "params": {
+                  "unit": "557919894",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "openx|s2s",
+                "params": {
+                  "unit": "557919894",
+                  "delDomain": "frvrltd-d.openx.net"
+                }
+              },
+              {
+                "bidder": "inmobi",
+                "params": {
+                  "plc": "1666215920105"
+                }
+              },
+              {
+                "bidder": "criteo",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_300x250_2"
+                }
+              },
+              {
+                "bidder": "criteo|s2s",
+                "params": {
+                  "networkId": 11611,
+                  "zoneId": 1692763,
+                  "publisherSubId": "frvr-krunker_io-krunker-display-banner-krunkerio_300x250_2"
+                }
+              },
+              {
+                "bidder": "oftmedia",
+                "params": {
+                  "placementId": 28082105,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "oftmedia|s2s",
+                "params": {
+                  "placement_id": 28082105,
+                  "usePaymentRule": true
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n2",
+                  "accountid": "LeV1TZz730jMkOQhkbZv",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "smartyads|s2s",
+                "params": {
+                  "host": "n1",
+                  "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                  "placementId": "frvr_banner",
+                  "sourceid": "frvr_banner"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "yWZQ1AYVdibDQKI6Lvjlapz1"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "rROXqOb7T7mDBpFSOYlQY2QN"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "G1PoA5QGiuzpYEKhdNeA1Plp"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "b5EwuWu91oQM5ThHU95ChLly"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "zyqzH8BNmwBsZKu3Np8vy7oE"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "mpwl7oGrYFi5ZuMnNWICacmj"
+                }
+              },
+              {
+                "bidder": "sharethrough",
+                "params": {
+                  "pkey": "I6LP2i9nFr4i70WKnKrZuwFO"
+                }
+              },
+              {
+                "bidder": "sharethrough|s2s",
+                "params": {
+                  "pkey": "ule5dCl2SIoYQWdAANhwL2uT"
+                }
+              },
+              {
+                "bidder": "limelightDigital",
+                "params": {
+                  "host": "ads-246u6.iionads.com",
+                  "adUnitId": "42000",
+                  "adUnitType": "banner"
+                }
+              },
+              {
+                "bidder": "ix",
+                "params": {
+                  "siteId": "928011"
+                }
+              },
+              {
+                "bidder": "ix|s2s",
+                "params": {
+                  "siteId": "928011"
+                }
+              },
+              {
+                "bidder": "vidoomy",
+                "params": {
+                  "id": 52649,
+                  "pid": 62348
+                }
+              },
+              {
+                "bidder": "vidoomy|s2s",
+                "params": {
+                  "zoneId": "52649"
+                }
+              },
+              {
+                "bidder": "gumgum",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "gumgum|s2s",
+                "params": {
+                  "zone": "py6b4mh0",
+                  "slot": 952310
+                }
+              },
+              {
+                "bidder": "triplelift",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "triplelift|s2s",
+                "params": {
+                  "inventoryCode": "frvr_display_banner_ron"
+                }
+              },
+              {
+                "bidder": "eplanning",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "eplanning|s2s",
+                "params": {
+                  "ci": "5f846"
+                }
+              },
+              {
+                "bidder": "brightcom",
+                "params": {
+                  "publisherId": "20752"
+                }
+              },
+              {
+                "bidder": "cpmstar",
+                "params": {
+                  "placementId": 87379
+                }
+              },
+              {
+                "bidder": "cpmstar|s2s",
+                "params": {
+                  "placementId": 87379
+                }
+              },
+              {
+                "bidder": "onetag",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              },
+              {
+                "bidder": "onetag|s2s",
+                "params": {
+                  "pubId": "7f4d2923ea87500"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "fran#video",
+      "type": "interstitial",
+      "priority": 1,
+      "config": {
+        "pageUrl": "https://krunker.io",
+        "adUnit": {
+          "code": "/21823819281/krunker-video-interstitial-default",
+          "mediaTypes": {
+            "video": {
+              "placement": 1,
+              "plcmt": 1,
+              "context": "instream",
+              "playerSize": [],
+              "mimes": [
+                "video/mp4",
+                "video/3gpp",
+                "video/mpeg",
+                "video/ogg",
+                "video/quicktime",
+                "video/webm",
+                "application/javascript"
+              ],
+              "protocols": [
+                2,
+                3,
+                5,
+                6,
+                7,
+                8
+              ],
+              "playbackmethod": [
+                3
+              ],
+              "skip": 1,
+              "startdelay": 0,
+              "linearity": 1,
+              "api": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ]
+            }
+          },
+          "ortb2Imp": {
+            "instl": 1
+          },
+          "bids": [
+            {
+              "bidder": "rubicon",
+              "params": {
+                "accountId": "24342",
+                "siteId": "440788",
+                "zoneId": "2533296",
+                "video": {
+                  "language": "en",
+                  "size_id": 201
+                }
+              }
+            },
+            {
+              "bidder": "rubicon|s2s",
+              "params": {
+                "accountId": "24342",
+                "siteId": "440788",
+                "zoneId": "2533296",
+                "video": {
+                  "language": "en",
+                  "size_id": 201
+                }
+              }
+            },
+            {
+              "bidder": "pubmatic",
+              "params": {
+                "publisherId": "162156",
+                "adSlot": "4649645"
+              }
+            },
+            {
+              "bidder": "pubmatic|s2s",
+              "params": {
+                "publisherId": "162156",
+                "adSlot": "4649645"
+              }
+            },
+            {
+              "bidder": "openx",
+              "params": {
+                "unit": "557919898",
+                "delDomain": "frvrltd-d.openx.net"
+              }
+            },
+            {
+              "bidder": "openx|s2s",
+              "params": {
+                "unit": "557919898",
+                "delDomain": "frvrltd-d.openx.net"
+              }
+            },
+            {
+              "bidder": "inmobi",
+              "params": {
+                "plc": "1665461238510"
+              }
+            },
+            {
+              "bidder": "criteo",
+              "params": {
+                "networkId": 11611,
+                "zoneId": 1696887,
+                "publisherSubId": "frvr-krunker_io-krunker-video-interstitial-default"
+              }
+            },
+            {
+              "bidder": "criteo|s2s",
+              "params": {
+                "networkId": 11611,
+                "zoneId": 1696887,
+                "publisherSubId": "frvr-krunker_io-krunker-video-interstitial-default"
+              }
+            },
+            {
+              "bidder": "oftmedia",
+              "params": {
+                "placementId": 27861804,
+                "usePaymentRule": true
+              }
+            },
+            {
+              "bidder": "oftmedia|s2s",
+              "params": {
+                "placement_id": 27861804,
+                "usePaymentRule": true
+              }
+            },
+            {
+              "bidder": "smartyads",
+              "params": {
+                "host": "n2",
+                "accountid": "FiG96PjfTTPoz8cWssv5",
+                "placementId": "frvr_video",
+                "sourceid": "frvr_video"
+              }
+            },
+            {
+              "bidder": "smartyads|s2s",
+              "params": {
+                "host": "n2",
+                "accountid": "FiG96PjfTTPoz8cWssv5",
+                "placementId": "frvr_video",
+                "sourceid": "frvr_video"
+              }
+            },
+            {
+              "bidder": "smartyads",
+              "params": {
+                "host": "n1",
+                "accountid": "tUtAxXDv5DBDIMhSFhA4",
+                "placementId": "frvr_video",
+                "sourceid": "frvr_video"
+              }
+            },
+            {
+              "bidder": "smartyads|s2s",
+              "params": {
+                "host": "n1",
+                "accountid": "tUtAxXDv5DBDIMhSFhA4",
+                "placementId": "frvr_video",
+                "sourceid": "frvr_video"
+              }
+            },
+            {
+              "bidder": "sharethrough",
+              "params": {
+                "pkey": "1MWTC2pkvq5YZD6xvHbhIS1P"
+              }
+            },
+            {
+              "bidder": "sharethrough|s2s",
+              "params": {
+                "pkey": "1MWTC2pkvq5YZD6xvHbhIS1P"
+              }
+            },
+            {
+              "bidder": "sharethrough",
+              "params": {
+                "pkey": "3csUsY2BwVjJEnlDHYQt18Nm"
+              }
+            },
+            {
+              "bidder": "sharethrough|s2s",
+              "params": {
+                "pkey": "3csUsY2BwVjJEnlDHYQt18Nm"
+              }
+            },
+            {
+              "bidder": "ix",
+              "params": {
+                "siteId": "928007"
+              }
+            },
+            {
+              "bidder": "ix|s2s",
+              "params": {
+                "siteId": "928007"
+              }
+            },
+            {
+              "bidder": "vidoomy",
+              "params": {
+                "id": 52650,
+                "pid": 62348
+              }
+            },
+            {
+              "bidder": "vidoomy|s2s",
+              "params": {
+                "zoneId": "52650"
+              }
+            },
+            {
+              "bidder": "gumgum",
+              "params": {
+                "zone": "py6b4mh0",
+                "slot": 952310
+              }
+            },
+            {
+              "bidder": "gumgum|s2s",
+              "params": {
+                "zone": "py6b4mh0",
+                "slot": 952310
+              }
+            },
+            {
+              "bidder": "triplelift",
+              "params": {
+                "inventoryCode": "frvr_video_interstitial_ron"
+              }
+            },
+            {
+              "bidder": "triplelift|s2s",
+              "params": {
+                "inventoryCode": "frvr_video_interstitial_ron"
+              }
+            },
+            {
+              "bidder": "eplanning",
+              "params": {
+                "ci": "5f846"
+              }
+            },
+            {
+              "bidder": "eplanning|s2s",
+              "params": {
+                "ci": "5f846"
+              }
+            },
+            {
+              "bidder": "brightcom",
+              "params": {
+                "publisherId": "20752"
+              }
+            },
+            {
+              "bidder": "cpmstar",
+              "params": {
+                "placementId": 87378
+              }
+            },
+            {
+              "bidder": "cpmstar|s2s",
+              "params": {
+                "placementId": 87378
+              }
+            },
+            {
+              "bidder": "onetag",
+              "params": {
+                "pubId": "7f4d2923ea87500"
+              }
+            },
+            {
+              "bidder": "onetag|s2s",
+              "params": {
+                "pubId": "7f4d2923ea87500"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "fran#display",
+      "type": "interstitial",
+      "priority": 2,
+      "config": {
+        "pageUrl": "https://krunker.io",
+        "adUnit": {
+          "code": "/21823819281/krunker-display-interstitial-default",
+          "mediaTypes": {
+            "banner": {
+              "sizes": []
+            }
+          },
+          "ortb2Imp": {
+            "instl": 1
+          },
+          "bids": [
+            {
+              "bidder": "rubicon",
+              "params": {
+                "accountId": "24342",
+                "siteId": "440788",
+                "zoneId": "2602120",
+                "video": {
+                  "language": "en"
+                }
+              }
+            },
+            {
+              "bidder": "rubicon|s2s",
+              "params": {
+                "accountId": "24342",
+                "siteId": "440788",
+                "zoneId": "2602120",
+                "video": {
+                  "language": "en"
+                }
+              }
+            },
+            {
+              "bidder": "pubmatic",
+              "params": {
+                "publisherId": "162156",
+                "adSlot": "4737038"
+              }
+            },
+            {
+              "bidder": "pubmatic|s2s",
+              "params": {
+                "publisherId": "162156",
+                "adSlot": "4737038"
+              }
+            },
+            {
+              "bidder": "openx",
+              "params": {
+                "unit": "557919899",
+                "delDomain": "frvrltd-d.openx.net"
+              }
+            },
+            {
+              "bidder": "openx|s2s",
+              "params": {
+                "unit": "557919899",
+                "delDomain": "frvrltd-d.openx.net"
+              }
+            },
+            {
+              "bidder": "inmobi",
+              "params": {
+                "plc": "1666917590907"
+              }
+            },
+            {
+              "bidder": "criteo",
+              "params": {
+                "networkId": 11611,
+                "zoneId": 1692763,
+                "publisherSubId": "frvr-krunker_io-krunker-display-interstitial-default"
+              }
+            },
+            {
+              "bidder": "criteo|s2s",
+              "params": {
+                "networkId": 11611,
+                "zoneId": 1692763,
+                "publisherSubId": "frvr-krunker_io-krunker-display-interstitial-default"
+              }
+            },
+            {
+              "bidder": "oftmedia",
+              "params": {
+                "placementId": 28082141,
+                "usePaymentRule": true
+              }
+            },
+            {
+              "bidder": "oftmedia|s2s",
+              "params": {
+                "placement_id": 28082141,
+                "usePaymentRule": true
+              }
+            },
+            {
+              "bidder": "smartyads",
+              "params": {
+                "host": "n2",
+                "accountid": "LeV1TZz730jMkOQhkbZv",
+                "placementId": "frvr_banner",
+                "sourceid": "frvr_banner"
+              }
+            },
+            {
+              "bidder": "smartyads|s2s",
+              "params": {
+                "host": "n2",
+                "accountid": "LeV1TZz730jMkOQhkbZv",
+                "placementId": "frvr_banner",
+                "sourceid": "frvr_banner"
+              }
+            },
+            {
+              "bidder": "smartyads",
+              "params": {
+                "host": "n1",
+                "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                "placementId": "frvr_banner",
+                "sourceid": "frvr_banner"
+              }
+            },
+            {
+              "bidder": "smartyads|s2s",
+              "params": {
+                "host": "n1",
+                "accountid": "e3uJr3tEdUsqvoqhYKrr",
+                "placementId": "frvr_banner",
+                "sourceid": "frvr_banner"
+              }
+            },
+            {
+              "bidder": "limelightDigital",
+              "params": {
+                "host": "ads-246u6.iionads.com",
+                "adUnitId": "42000",
+                "adUnitType": "banner"
+              }
+            },
+            {
+              "bidder": "ix",
+              "params": {
+                "siteId": "928012"
+              }
+            },
+            {
+              "bidder": "ix|s2s",
+              "params": {
+                "siteId": "928012"
+              }
+            },
+            {
+              "bidder": "vidoomy",
+              "params": {
+                "id": 52651,
+                "pid": 62348
+              }
+            },
+            {
+              "bidder": "vidoomy|s2s",
+              "params": {
+                "zoneId": "52651"
+              }
+            },
+            {
+              "bidder": "gumgum",
+              "params": {
+                "zone": "py6b4mh0",
+                "slot": 952310
+              }
+            },
+            {
+              "bidder": "gumgum|s2s",
+              "params": {
+                "zone": "py6b4mh0",
+                "slot": 952310
+              }
+            },
+            {
+              "bidder": "triplelift",
+              "params": {
+                "inventoryCode": "frvr_display_interstitial_ron"
+              }
+            },
+            {
+              "bidder": "triplelift|s2s",
+              "params": {
+                "inventoryCode": "frvr_display_interstitial_ron"
+              }
+            },
+            {
+              "bidder": "eplanning",
+              "params": {
+                "ci": "5f846"
+              }
+            },
+            {
+              "bidder": "eplanning|s2s",
+              "params": {
+                "ci": "5f846"
+              }
+            },
+            {
+              "bidder": "brightcom",
+              "params": {
+                "publisherId": "20752"
+              }
+            },
+            {
+              "bidder": "cpmstar",
+              "params": {
+                "placementId": 87379
+              }
+            },
+            {
+              "bidder": "cpmstar|s2s",
+              "params": {
+                "placementId": 87379
+              }
+            },
+            {
+              "bidder": "onetag",
+              "params": {
+                "pubId": "7f4d2923ea87500"
+              }
+            },
+            {
+              "bidder": "onetag|s2s",
+              "params": {
+                "pubId": "7f4d2923ea87500"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "throttling": {
+    "maxfrequency": 0
+  }
+}

@@ -1,0 +1,13 @@
+{
+"companyName": "Pony Games",
+"productName": "Up Hill Racing: Car Climb",
+"dataUrl": "GD.data.unityweb",
+"wasmCodeUrl": "GD.wasm.code.unityweb",
+"wasmFrameworkUrl": "GD.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#2B2B2B",
+"cacheControl": {"default": "must-revalidate"}
+}

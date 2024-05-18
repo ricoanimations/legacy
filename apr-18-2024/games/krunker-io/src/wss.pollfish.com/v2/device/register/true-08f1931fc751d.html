@@ -1,0 +1,3857 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,height=device-height">
+    <title>Pollfish Survey</title>
+    <link rel="shortcut icon" type="image/png" href="https://www.pollfish.com/images/favicon.ico" />
+    <link href="https://mobile.poll.fish/dist/app.c49252e1cdaea1ca947d.css" rel="stylesheet">
+    <script type="text/javascript">
+        var Pollfish = window.Pollfish || {};
+        window.Pollfish.getUserDetails = function() {
+            return {
+                sdk_version: "9",
+                survey_id: "387440571",
+                device_id: "P20c15527-dbcd-4ec9-a717-ef382e52fdb9",
+                api_key: "8685bdec-f922-49d5-b7f9-58850c5c0a3a",
+                placement_key: "-1"
+            }
+        }
+    </script>
+    <script src="https://cdn.ravenjs.com/3.18.1/raven.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        try {
+            window.Raven = Raven, window.Raven.config("https://ee8dcdfde6e34a5b97659f0c0aa9a208@sentry.io/239618", {
+                release: "b2a679a1cf738d43d953cd4413e59c573b7acdcf"
+            }).install(), window.Raven.setUserContext(window.Pollfish.getUserDetails())
+        } catch (e) {
+            window.Raven = {
+                ravenBreadcrumb: function() {},
+                captureBreadcrumb: function() {},
+                setUserContext: function() {},
+                captureException: function() {}
+            }, console.error(e)
+        }
+    </script>
+    <script type="text/javascript">
+        Pollfish.mobile = {
+            interface: {
+                panelClosed: function() {}, panelOpened: function() {}, pauseVideo: function() {}, playVideo: function() {}, exitFullScreen: function() {}, webViewFocus: function() {}, focusExplicitly: function() {}
+            }
+        }
+    </script>
+    <script type="text/javascript" src="https://mobile.poll.fish/dist/app.4487a83b9cae7fa7e11d.js.gz"></script>
+    <script>
+        Pollfish.initApi = function() {
+            Pollfish.helper.html = {}, Pollfish.helper.html.sdk = {
+                "api_key": "8685bdec-f922-49d5-b7f9-58850c5c0a3a",
+                "device_id": "P20c15527-dbcd-4ec9-a717-ef382e52fdb9",
+                "version": "9",
+                "app_api_key": "",
+                "request_uuid": "",
+                "debug": "false",
+                "click_id": "",
+                "sig": ""
+            }, Pollfish.helper.html.json = {
+                "debug": false,
+                "containsSurvey": true,
+                "s_id": 387440571,
+                "s_size": -1,
+                "head_id": 5605715,
+                "end_msg": "Thank You",
+                "questions": [{
+                    "refId": "5e0bc340-f287-11ee-93b3-b5fe9c1549ed",
+                    "id": 5605715,
+                    "style": 0,
+                    "prompt": "Are you involved in the digital marketing field?",
+                    "height": -1,
+                    "answers": [{
+                        "refId": "5e30fe80-f287-11ee-93b3-b5fe9c1549ed",
+                        "id": 62207749,
+                        "order": 1,
+                        "body": "<div>Yes</div>",
+                        "next_q": 5605716,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "5fe42cc0-f287-11ee-93b3-b5fe9c1549ed",
+                        "id": 62207750,
+                        "order": 2,
+                        "body": "<div>No</div>",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 0,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "strictNotAllowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": true,
+                    "htmlPrompt": "<div>Are you involved in the digital marketing field?</div>"
+                }, {
+                    "refId": "6e2e7830-f287-11ee-93b3-b5fe9c1549ed",
+                    "id": 5605716,
+                    "style": 0,
+                    "prompt": "Have you launched/completed a website migration for your business website or a client website within the last year? ",
+                    "height": -2,
+                    "answers": [{
+                        "refId": "6e4163f0-f287-11ee-93b3-b5fe9c1549ed",
+                        "id": 62207751,
+                        "order": 1,
+                        "body": "<div>Yes</div>",
+                        "next_q": 5605805,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "84a840f0-f287-11ee-93b3-b5fe9c1549ed",
+                        "id": 62207752,
+                        "order": 2,
+                        "body": "<div>No</div>",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 0,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "strictNotAllowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": true,
+                    "htmlPrompt": "<div>Have you launched/completed a website migration for your business website or a client website within the last year? </div>"
+                }, {
+                    "refId": "aed05990-f28b-11ee-a57e-0ba2b8a201b3",
+                    "id": 5605805,
+                    "style": 0,
+                    "prompt": "What was the primary reason that you decided to commit to a website migration? ",
+                    "height": -3,
+                    "answers": [{
+                        "refId": "aedbcb40-f28b-11ee-a57e-0ba2b8a201b3",
+                        "id": 62208938,
+                        "order": 1,
+                        "body": "<div>Moving to a new domain </div>",
+                        "next_q": 5605812,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "afa9c9a0-f28b-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209034,
+                        "order": 2,
+                        "body": "<div>Changing your content management system (CMS) or platforms </div>",
+                        "next_q": 5605812,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "bdcb5760-f28b-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209081,
+                        "order": 3,
+                        "body": "<div>Switching hosting providers </div>",
+                        "next_q": 5605812,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "d8018be0-f28b-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209083,
+                        "order": 4,
+                        "body": "<div>Redesigning or restructuring the website </div>",
+                        "next_q": 5605812,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "dc406e10-f28b-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209084,
+                        "order": 102,
+                        "body": "Other",
+                        "next_q": 5605812,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 1,
+                        "label": "Please specify",
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "required": false,
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": false,
+                    "htmlPrompt": "<div>What was the primary reason that you decided to commit to a website migration? </div>"
+                }, {
+                    "refId": "e20bbca3-f28b-11ee-a57e-0ba2b8a201b3",
+                    "id": 5605812,
+                    "style": 9,
+                    "prompt": "Please rate your difficulty with your migration on a scale of 1-5, with 1 being extremely simple and 5 being extremely difficult. ",
+                    "height": -4,
+                    "answers": [{
+                        "refId": "eb147a9c-4503-437f-85c1-8f5d3ea3f461",
+                        "id": 62209087,
+                        "order": 0,
+                        "body": "1",
+                        "next_q": 5605820,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "4b27d37e-08d8-45bf-a139-bc2e4e4fda85",
+                        "id": 62209088,
+                        "order": 1,
+                        "body": "2",
+                        "next_q": 5605820,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "89b86b31-2140-4463-ae6e-6dc433af43ec",
+                        "id": 62209089,
+                        "order": 2,
+                        "body": "3",
+                        "next_q": 5605820,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "b6912284-7dd7-4391-abd7-cd9dd211ac80",
+                        "id": 62209090,
+                        "order": 3,
+                        "body": "4",
+                        "next_q": 5605820,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "02f3d29b-c0a7-4c98-9fd1-1ab9d8c21208",
+                        "id": 62209091,
+                        "order": 4,
+                        "body": "5",
+                        "next_q": 5605820,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "min": 1,
+                    "max": 5,
+                    "isScreening": false,
+                    "slideQuestionDto": {
+                        "slideQuestionId": 205500,
+                        "minValue": 1,
+                        "maxValue": 5,
+                        "rangeStep": 1,
+                        "isRangeSelectionVisible": false,
+                        "ticks": [{
+                            "tickId": 1496067,
+                            "tickValue": 5,
+                            "tickLabel": "<div>Extremely difficult</div>"
+                        }, {
+                            "tickId": 1496066,
+                            "tickValue": 1,
+                            "tickLabel": "<div>Extremely simple</div>"
+                        }]
+                    },
+                    "htmlPrompt": "<div>Please rate your difficulty with your migration on a scale of 1-5, with 1 being extremely simple and 5 being extremely difficult. </div>"
+                }, {
+                    "refId": "f7eaa4f0-f28b-11ee-a57e-0ba2b8a201b3",
+                    "id": 5605820,
+                    "style": 0,
+                    "prompt": "What would you describe as the largest challenge you encountered during your website migration? ",
+                    "height": -5,
+                    "answers": [{
+                        "refId": "f7fdb7c0-f28b-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209789,
+                        "order": 1,
+                        "body": "<div>Preserving search engine rankings and traffic </div>",
+                        "next_q": 5605846,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "8f0f4570-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209790,
+                        "order": 2,
+                        "body": "<div>Maintaining website functionality and user experience </div>",
+                        "next_q": 5605846,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "9273cd30-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209793,
+                        "order": 3,
+                        "body": "<div>Ensuring data and content integrity </div>",
+                        "next_q": 5605846,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "96ea1310-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209796,
+                        "order": 4,
+                        "body": "<div>Redirecting URLs and managing 404 errors </div>",
+                        "next_q": 5605846,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "9a657e30-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209798,
+                        "order": 5,
+                        "body": "<div>Managing the project timeline and resources </div>",
+                        "next_q": 5605846,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": false,
+                    "htmlPrompt": "<div>What would you describe as the largest challenge you encountered during your website migration? </div>"
+                }, {
+                    "refId": "a0115de0-f28c-11ee-a57e-0ba2b8a201b3",
+                    "id": 5605846,
+                    "style": 0,
+                    "prompt": "Did you have a set 401 redirect plan in place prior to your migration? ",
+                    "height": -6,
+                    "answers": [{
+                        "refId": "a0250cf0-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209801,
+                        "order": 1,
+                        "body": "<div>Yes</div>",
+                        "next_q": 5605848,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "a66b57e0-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209803,
+                        "order": 2,
+                        "body": "<div>No</div>",
+                        "next_q": 5605848,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": false,
+                    "htmlPrompt": "<div>Did you have a set 401 redirect plan in place prior to your migration? </div>"
+                }, {
+                    "refId": "affdc090-f28c-11ee-a57e-0ba2b8a201b3",
+                    "id": 5605848,
+                    "style": 0,
+                    "prompt": "Did you experience any significant drop in website traffic or search engine rankings after the migration? ",
+                    "height": -7,
+                    "answers": [{
+                        "refId": "b01ba8d0-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209808,
+                        "order": 1,
+                        "body": "<div>Yes, a significant drop in traffic and we have not recovered </div>",
+                        "next_q": 5605859,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "b52e7cd0-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209811,
+                        "order": 2,
+                        "body": "<div>Yes, a significant drop in traffic but we have bounced back </div>",
+                        "next_q": 5605859,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "b8e1c0d0-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209812,
+                        "order": 3,
+                        "body": "<div>Yes, a significant drop in rankings and we have not recovered </div>",
+                        "next_q": 5605859,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "bca669f0-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209815,
+                        "order": 4,
+                        "body": "<div>Yes, a significant drop in rankings but we have bounced back </div>",
+                        "next_q": 5605859,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "c1b8efd0-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209818,
+                        "order": 5,
+                        "body": "<div>Yes, a significant drop in rankings and traffic and we have not recovered </div>",
+                        "next_q": 5605859,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "c676ed10-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209819,
+                        "order": 6,
+                        "body": "<div>Yes, a significant drop in rankings and traffic but we have bounced back </div>",
+                        "next_q": 5605859,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "ca1f82b0-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209853,
+                        "order": 7,
+                        "body": "<div>No, traffic and rankings remained stable </div>",
+                        "next_q": 5605859,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "cf6881e0-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209865,
+                        "order": 8,
+                        "body": "<div>Not sure</div>",
+                        "next_q": 5605859,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": false,
+                    "htmlPrompt": "<div>Did you experience any significant drop in website traffic or search engine rankings after the migration? </div>"
+                }, {
+                    "refId": "bd19a8b0-f28d-11ee-a57e-0ba2b8a201b3",
+                    "id": 5605859,
+                    "style": 0,
+                    "prompt": " How long did you or do you anticipate for your traffic to reach pre-migration levels?",
+                    "height": -8,
+                    "answers": [{
+                        "refId": "bd36a690-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210042,
+                        "order": 1,
+                        "body": "<div>Less than a month </div>",
+                        "next_q": 5605850,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "c6ba1b20-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210043,
+                        "order": 2,
+                        "body": "<div>1-2 months </div>",
+                        "next_q": 5605850,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "c9bd7010-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210148,
+                        "order": 3,
+                        "body": "<div>3-4 months </div>",
+                        "next_q": 5605850,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "cc734140-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210149,
+                        "order": 4,
+                        "body": "<div>5-6 months </div>",
+                        "next_q": 5605850,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "cf491d90-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210150,
+                        "order": 5,
+                        "body": "<div>Over 6 months </div>",
+                        "next_q": 5605850,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": false,
+                    "htmlPrompt": "<div> How long did you or do you anticipate for your traffic to reach pre-migration levels?</div>"
+                }, {
+                    "refId": "d6b98610-f28c-11ee-a57e-0ba2b8a201b3",
+                    "id": 5605850,
+                    "style": 0,
+                    "prompt": "How satisfied were you with the outcome of the site migration? ",
+                    "height": -9,
+                    "answers": [{
+                        "refId": "d6d23e30-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209879,
+                        "order": 1,
+                        "body": "<div>Very satisfied </div>",
+                        "next_q": 5605853,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "db8f02f0-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209880,
+                        "order": 2,
+                        "body": "<div>Somewhat satisfied </div>",
+                        "next_q": 5605853,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "dfae0110-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209901,
+                        "order": 3,
+                        "body": "<div>Neutral </div>",
+                        "next_q": 5605853,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "e3689810-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209922,
+                        "order": 4,
+                        "body": "<div>Somewhat dissatisfied </div>",
+                        "next_q": 5605853,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "e6deac00-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209934,
+                        "order": 5,
+                        "body": "<div>Very dissatisfied </div>",
+                        "next_q": 5605853,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": false,
+                    "htmlPrompt": "<div>How satisfied were you with the outcome of the site migration? </div>"
+                }, {
+                    "refId": "f08cda10-f28c-11ee-a57e-0ba2b8a201b3",
+                    "id": 5605853,
+                    "style": 0,
+                    "prompt": "How much did your migration cost?",
+                    "height": -10,
+                    "answers": [{
+                        "refId": "f0a60760-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209948,
+                        "order": 1,
+                        "body": "<div>Below $2000 </div>",
+                        "next_q": 5605854,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "f7e75420-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209960,
+                        "order": 2,
+                        "body": "<div>$2001-$5000 </div>",
+                        "next_q": 5605854,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "faf9c440-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209961,
+                        "order": 3,
+                        "body": "<div>$5001-$10000 </div>",
+                        "next_q": 5605854,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "fe0d45d0-f28c-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209983,
+                        "order": 4,
+                        "body": "<div>$10001-$20000 </div>",
+                        "next_q": 5605854,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "0249b700-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209985,
+                        "order": 5,
+                        "body": "<div>$20001-$50000 </div>",
+                        "next_q": 5605854,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "05e1d1e0-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62209988,
+                        "order": 6,
+                        "body": "<div>$50000-$100000 </div>",
+                        "next_q": 5605854,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "09e5cdf0-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210001,
+                        "order": 7,
+                        "body": "<div>Over $100000 </div>",
+                        "next_q": 5605854,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": false,
+                    "htmlPrompt": "<div>How much did your migration cost?</div>"
+                }, {
+                    "refId": "17b236d0-f28d-11ee-a57e-0ba2b8a201b3",
+                    "id": 5605854,
+                    "style": 0,
+                    "prompt": "Did this migration result in increased revenue for your business? ",
+                    "height": -11,
+                    "answers": [{
+                        "refId": "17cb3d10-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210004,
+                        "order": 1,
+                        "body": "<div>Yes </div>",
+                        "next_q": 5605855,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "1d843c20-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210006,
+                        "order": 2,
+                        "body": "<div>No</div>",
+                        "next_q": 5605855,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": false,
+                    "htmlPrompt": "<div>Did this migration result in increased revenue for your business? </div>"
+                }, {
+                    "refId": "2639b250-f28d-11ee-a57e-0ba2b8a201b3",
+                    "id": 5605855,
+                    "style": 0,
+                    "prompt": "Would you recommend others to undergo a site migration, given your experience? ",
+                    "height": -12,
+                    "answers": [{
+                        "refId": "264f3620-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210010,
+                        "order": 1,
+                        "body": "<div>Definitely yes </div>",
+                        "next_q": 5605856,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "2ab01f40-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210013,
+                        "order": 2,
+                        "body": "<div>Probably yes </div>",
+                        "next_q": 5605856,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "2dfa1a20-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210014,
+                        "order": 3,
+                        "body": "<div>Neutral </div>",
+                        "next_q": 5605856,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "30e3f3a0-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210015,
+                        "order": 4,
+                        "body": "<div>Probably not </div>",
+                        "next_q": 5605856,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "33ae3730-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210016,
+                        "order": 5,
+                        "body": "<div>Definitely not </div>",
+                        "next_q": 5605856,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": false,
+                    "htmlPrompt": "<div>Would you recommend others to undergo a site migration, given your experience? </div>"
+                }, {
+                    "refId": "4d2cb470-f28d-11ee-a57e-0ba2b8a201b3",
+                    "id": 5605856,
+                    "style": 13,
+                    "prompt": "How important are the following factors when considering a site migration? (Rate each factor on a scale of 1-5, where 1 is \"Not important at all\" and 5 is \"Extremely important\") ",
+                    "height": -13,
+                    "answers": [{
+                        "refId": "5b861b11-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210037,
+                        "order": 2,
+                        "body": "<div>Maintaining website functionality and user experience </div>",
+                        "next_q": 5605875,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "6547aa10-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210038,
+                        "order": 3,
+                        "body": "<div>Ensuring data and content integrity </div>",
+                        "next_q": 5605875,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "66305c60-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210041,
+                        "order": 6,
+                        "body": "<div>Internal resources and expertise </div>",
+                        "next_q": 5605875,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "5b861b10-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210036,
+                        "order": 1,
+                        "body": "<div>Preserving search engine rankings and traffic </div>",
+                        "next_q": 5605875,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "6582b740-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210039,
+                        "order": 4,
+                        "body": "<div>Minimizing downtime and disruption </div>",
+                        "next_q": 5605875,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "65c05c80-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210040,
+                        "order": 5,
+                        "body": "<div>Cost and budget considerations </div>",
+                        "next_q": 5605875,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [{
+                        "refId": "6b13bbf0-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 3238991,
+                        "ord": 3,
+                        "body": "<div>Somewhat important</div>",
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "6b5cf9f0-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 3238993,
+                        "ord": 5,
+                        "body": "<div>Extremely important</div>",
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "6b3a7dd0-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 3238992,
+                        "ord": 4,
+                        "body": "<div>Very important</div>",
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "5b861b12-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 3238989,
+                        "ord": 1,
+                        "body": "<div>Not important at all</div>",
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "5b861b13-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 3238990,
+                        "ord": 2,
+                        "body": "<div>Not very important</div>",
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }],
+                    "shuffle": 0,
+                    "isScreening": false,
+                    "htmlPrompt": "<div>How important are the following factors when considering a site migration? (Rate each factor on a scale of 1-5, where 1 is \"Not important at all\" and 5 is \"Extremely important\") </div>",
+                    "matrixStyle": "VERTICAL"
+                }, {
+                    "refId": "f51ad130-f28d-11ee-a57e-0ba2b8a201b3",
+                    "id": 5605875,
+                    "style": 0,
+                    "prompt": "Did you use a professional agency or consultant to help with your migration? ",
+                    "height": -14,
+                    "answers": [{
+                        "refId": "f53a4010-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210153,
+                        "order": 1,
+                        "body": "<div>Yes</div>",
+                        "next_q": 5605876,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "f71baa40-f28d-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210154,
+                        "order": 2,
+                        "body": "<div>No</div>",
+                        "next_q": 5605876,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": false,
+                    "htmlPrompt": "<div>Did you use a professional agency or consultant to help with your migration? </div>"
+                }, {
+                    "refId": "00e7e7a0-f28e-11ee-a57e-0ba2b8a201b3",
+                    "id": 5605876,
+                    "style": 0,
+                    "prompt": "Would you consider hiring a professional agency or consultant to assist with a future site migration?",
+                    "height": -15,
+                    "answers": [{
+                        "refId": "1110b710-f28e-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210160,
+                        "order": 6,
+                        "body": "<div>Not sure</div>",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "043f01e0-f28e-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210156,
+                        "order": 2,
+                        "body": "<div>Probably yes</div>",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "0d625510-f28e-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210158,
+                        "order": 4,
+                        "body": "<div>Probably not</div>",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "0f881b40-f28e-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210159,
+                        "order": 5,
+                        "body": "<div>Definitely not</div>",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "00fea3f0-f28e-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210155,
+                        "order": 1,
+                        "body": "<div>Definitely yes</div>",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }, {
+                        "refId": "0b00e570-f28e-11ee-a57e-0ba2b8a201b3",
+                        "id": 62210157,
+                        "order": 3,
+                        "body": "<div>Neutral</div>",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "screenerType": "allowed",
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": false,
+                    "htmlPrompt": "<div>Would you consider hiring a professional agency or consultant to assist with a future site migration?</div>"
+                }],
+                "questionGroups": [],
+                "feedback_questions": {
+                    "en": [{
+                        "refId": "1ea38981-6a96-4f90-9e9c-5036e3647631",
+                        "id": 10,
+                        "style": 0,
+                        "prompt": "Tell us what happened",
+                        "height": -1,
+                        "answers": [{
+                            "refId": "b3c61c6f-5cd9-46d7-81b3-4a0df52aeb04",
+                            "id": 0,
+                            "order": 0,
+                            "body": "The survey page had an error",
+                            "next_q": 0,
+                            "votes": 0,
+                            "screener_limit": 1,
+                            "style": 0,
+                            "isCarriedForward": false,
+                            "isExclusive": false
+                        }, {
+                            "refId": "bbf57573-0e95-440f-9c78-a3f31e5bfaf4",
+                            "id": 1,
+                            "order": 1,
+                            "body": "Asked for personal information",
+                            "next_q": 0,
+                            "votes": 0,
+                            "screener_limit": 1,
+                            "style": 0,
+                            "isCarriedForward": false,
+                            "isExclusive": false
+                        }, {
+                            "refId": "4367205d-14c3-4b33-9950-71bd5c2723cf",
+                            "id": 2,
+                            "order": 2,
+                            "body": "Survey didn't work on my device",
+                            "next_q": 0,
+                            "votes": 0,
+                            "screener_limit": 1,
+                            "style": 0,
+                            "isCarriedForward": false,
+                            "isExclusive": false
+                        }, {
+                            "refId": "7231223c-505b-4bd7-b3f3-a7c3ed3a7b6b",
+                            "id": 3,
+                            "order": 3,
+                            "body": "Survey worked fine",
+                            "next_q": 0,
+                            "votes": 0,
+                            "screener_limit": 1,
+                            "style": 0,
+                            "isCarriedForward": false,
+                            "isExclusive": false
+                        }, {
+                            "refId": "5f36c357-46fc-48cb-890c-8567da74d731",
+                            "id": 4,
+                            "order": 4,
+                            "body": "Other",
+                            "next_q": 0,
+                            "votes": 0,
+                            "screener_limit": 1,
+                            "style": 1,
+                            "isCarriedForward": false,
+                            "isExclusive": false
+                        }],
+                        "scorepoints": [],
+                        "shuffle": 0,
+                        "isScreening": false
+                    }]
+                },
+                "sanity_questions": [{
+                    "refId": "3bfdfe7d-67aa-4858-bb34-2a4195966030",
+                    "id": 18,
+                    "style": 0,
+                    "prompt": "Please select \"😂\" below",
+                    "height": -1,
+                    "answers": [{
+                        "refId": "a18bc1c0-1f70-4895-a0f5-f2962a75ccad",
+                        "id": 88,
+                        "order": 0,
+                        "body": "💩",
+                        "next_q": 0,
+                        "votes": 1,
+                        "screener_limit": 0,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "db1a4bfe-40bc-45a2-b6e4-d72188063480",
+                        "id": 21,
+                        "order": 1,
+                        "body": "😂",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "54bf92fc-1112-400f-b58c-9cf8d8c7ef34",
+                        "id": 45,
+                        "order": 2,
+                        "body": "😧",
+                        "next_q": 0,
+                        "votes": 1,
+                        "screener_limit": 0,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "bd88ef56-5feb-4e44-be51-b2d06a3c59ef",
+                        "id": 20,
+                        "order": 3,
+                        "body": "😢",
+                        "next_q": 0,
+                        "votes": 1,
+                        "screener_limit": 0,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 1,
+                    "isScreening": false,
+                    "htmlPrompt": "<div>Please select \"<span class=\"emoji\">😂</span>\" below</div>"
+                }, {
+                    "refId": "83e0f997-6d00-41dd-a258-61787e4b1582",
+                    "id": 16,
+                    "style": 0,
+                    "prompt": "What day comes after Tuesday?",
+                    "height": -1,
+                    "answers": [{
+                        "refId": "7b49cf54-b9f5-4890-a5ec-525423c2cef4",
+                        "id": 121,
+                        "order": 0,
+                        "body": "Monday",
+                        "next_q": 0,
+                        "votes": 1,
+                        "screener_limit": 0,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "50ac82d4-4298-49b1-b283-2d270bd6e382",
+                        "id": 122,
+                        "order": 1,
+                        "body": "Wednesday",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "c2368fd6-6e95-4b1e-b6c4-d6272d8c5b97",
+                        "id": 123,
+                        "order": 2,
+                        "body": "Thursday",
+                        "next_q": 0,
+                        "votes": 1,
+                        "screener_limit": 0,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "8ac63441-564f-4e53-b866-aefe78ed1d17",
+                        "id": 124,
+                        "order": 3,
+                        "body": "Friday",
+                        "next_q": 0,
+                        "votes": 1,
+                        "screener_limit": 0,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "aad80fda-9fa3-4186-a432-935d6d0c5571",
+                        "id": 125,
+                        "order": 4,
+                        "body": "Saturday",
+                        "next_q": 0,
+                        "votes": 1,
+                        "screener_limit": 0,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "93f9ca62-1815-485b-ada3-c33c152fdabb",
+                        "id": 125,
+                        "order": 5,
+                        "body": "Sunday",
+                        "next_q": 0,
+                        "votes": 1,
+                        "screener_limit": 0,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [],
+                    "shuffle": 0,
+                    "isScreening": false
+                }, {
+                    "refId": "46cb9d0f-0a39-4df6-a16a-5ae413230d7e",
+                    "id": 100,
+                    "style": 13,
+                    "prompt": "Please share your opinion",
+                    "height": -1,
+                    "answers": [{
+                        "refId": "6540f656-9f9d-489c-9646-3e59ee1b2b5d",
+                        "id": 101,
+                        "order": 0,
+                        "body": "Do you think online surveys are the right way to gather people's opinions?",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "9cee4517-d267-4c93-9e80-09092564a643",
+                        "id": 102,
+                        "order": 1,
+                        "body": "Do you think brands form products based entirely on feedback from online surveys?",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "f0eb72c1-9cc8-4171-9713-ef804406155a",
+                        "id": 103,
+                        "order": 2,
+                        "body": "Please select \"Somewhat Disagree\" below",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "qualifying_scorepoint_id": 1003,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }, {
+                        "refId": "d0df79b0-76a1-4904-90c2-f143f81bd10b",
+                        "id": 104,
+                        "order": 3,
+                        "body": "Offline surveys are much easier to complete in comparison to online ones",
+                        "next_q": 0,
+                        "votes": 0,
+                        "screener_limit": 1,
+                        "style": 0,
+                        "isCarriedForward": false,
+                        "isExclusive": false
+                    }],
+                    "scorepoints": [{
+                        "refId": "10cec677-f0fe-4dfc-86c6-fbaf653bfc25",
+                        "id": 1001,
+                        "ord": 1,
+                        "body": "Strongly Agree",
+                        "isExclusive": false
+                    }, {
+                        "refId": "6833dd9a-5429-4c4b-9a57-7d449c8de2c2",
+                        "id": 1002,
+                        "ord": 2,
+                        "body": "Somewhat Agree",
+                        "isExclusive": false
+                    }, {
+                        "refId": "d6ea801d-2c55-41da-a973-2daadede2879",
+                        "id": 1003,
+                        "ord": 3,
+                        "body": "Somewhat Disagree",
+                        "isExclusive": false
+                    }, {
+                        "refId": "7ab64912-308d-40b6-9d68-50e71f797050",
+                        "id": 1004,
+                        "ord": 4,
+                        "body": "Strongly Disagree",
+                        "isExclusive": false
+                    }],
+                    "shuffle": 0,
+                    "isScreening": false
+                }],
+                "translations": {
+                    "en": {
+                        "mobile.offerwall.history.activityCompleted": "Activity completed: XXXX",
+                        "mobile.offerwall.languages.pashto": "Pashto",
+                        "mobile.offerwall.history.contact": "Contact us",
+                        "mobile.gdpr.managing_data_header": "Managing your data and opt-out",
+                        "mobile.warnings.nps": "You need to tap on a number to rate and proceed.",
+                        "mobile.matrixMultiple": "Select multiple answers per statement",
+                        "mobile.warnings.multiple_with_min": "You need to select at least",
+                        "mobile.gdpr.what_data_option_three": "Communication data: these are the data you provide to us whenever you choose to directly communicate with Pollfish for any purpose.",
+                        "mobile.offerwall.sort.inProgress": "In progress",
+                        "mobile.warnings.matrix_bipolar": "You need to select a value per statement to proceed.",
+                        "mobile.errors.empty_email": "Please enter your email address",
+                        "mobile.matrixVanWestendorp.warnings.orderAsc": "You need to provide a value which is greater than the previous one",
+                        "mobile.offerwall.survey.not_found.title": "Looks like we are all out of surveys for the moment",
+                        "mobile.offerwall.offers.scan": "Or scan the QR code with your mobile device",
+                        "mobile.offerwall.languages.spanish": "Spanish",
+                        "mobile.offerwall.languages.hebrew": "Hebrew",
+                        "mobile.offerwall.surveyCard.top": "Top",
+                        "mobile.offerwall.category.offers": "Offers",
+                        "mobile.thank_you.incentive.new_email.placeholder": "Enter your email here",
+                        "mobile.profileComplete": "Profile Complete!",
+                        "mobile.offerwall.history.survey_expired": "Survey expired",
+                        "mobile.offerwall.languages.bengali": "Bengali",
+                        "mobile.offerwall.languages.chineseTraditional": "Chinese Traditional",
+                        "mobile.offerwall.languages.ukrainian": "Ukrainian",
+                        "mobile.high": "High",
+                        "mobile.offerwall.leaveSurvey.title": "Once you leave this survey you won't be able to try it again.",
+                        "mobile.gdpr.managing_data_option_one": "From Pollfish sending you surveys or displaying Offers to you: https://www.pollfish.com/respondent/opt-out",
+                        "mobile.offerwall.languages.german": "German",
+                        "mobile.offerwall.redirect.loading": "Loading the survey",
+                        "mobile.thank_you.incentive.new_email.btn_copy": "Submit and close",
+                        "mobile.warnings.multiple_with_max": "You cannot select more than",
+                        "mobile.low": "Low",
+                        "mobile.gdpr.what_data_option_two": "Survey data: these consist of the anonymous responses you provide whenever you agree to take a survey. Survey data may include anonymous sociodemographic data, collected through internal, Pollfish-administered sociodemographic questionnaires tendered to you, as well as any other responses you provide to our client-commissioned market research questionnaires.",
+                        "mobile.thank_you.no_offers_available.subtitle": "Someone ate all the offers!",
+                        "mobile.if_you_win_has_email": "We will notify you through your email if you win",
+                        "mobile.thank_you_screen.optional": "optional",
+                        "mobile.yeti.warnings.matrixConstantSumOpenEndedMustTotal": "You have to allocate {0} for each category",
+                        "mobile.errors.wrong_email": "Please enter a valid email address",
+                        "mobile.fillForm": "Please fill the form!",
+                        "mobile.offerwall.offers.earned": "XXX earned",
+                        "mobile.offerwall.languages.vietnamese": "Vietnamese",
+                        "mobile.withdraw_consent": "Update my consent",
+                        "mobile.offerwall.languages.italian": "Italian",
+                        "mobile.offerwall.languages.polish": "Polish",
+                        "mobile.offerwall.languages.hindi": "Hindi",
+                        "mobile.offerwall.offers.moreReward": "More XXXX",
+                        "mobile.yeti.matrixVanWestendorp.warnings.min": "The value must be greater than or equal to {0}",
+                        "mobile.offerwall.languages.hungarian": "Hungarian",
+                        "mobile.gdpr.i_will_not_participate": "I will not participate",
+                        "mobile.NPSmin": "Not at all likely",
+                        "mobile.offerwall.languages.persian": "Persian",
+                        "mobile.offerwall.offers.upTo": "Up to",
+                        "mobile.offerwall.languages.swedish": "Swedish",
+                        "mobile.offerwall.history.24_hours": "24 Hours",
+                        "mobile.offerwall.history.vpn": "VPN",
+                        "mobile.thank_you_screen.subtitle": "We will review your responses soon",
+                        "mobile.least": "Select at least",
+                        "mobile.surveyBy": "Survey By",
+                        "mobile.thank_you.incentive.already_email.subtitle": "You will be entered into a drawing for a chance to win a $20 gift card!",
+                        "mobile.offerwall.offers.deviceTypes.change": "Device Offers",
+                        "mobile.offerwall.history.survey_history": "Surveys",
+                        "mobile.hide_answers_multimatrix_prompt": "Hide answers",
+                        "mobile.warnings.multiple": "You need to select one or more answers to proceed.",
+                        "mobile.for_example": "for example",
+                        "mobile.sanity.screen_out.subtitle": "Unfortunately your responses failed to pass Pollfish quality controls. In future surveys please try to read carefully the questions and consider all options prior submitting your answers.",
+                        "mobile.thank_you.incentive.new_email.prompt": "Get in the draw for a $20 gift card",
+                        "mobile.thank_you.no_survey_available.btn_copy": "Close",
+                        "mobile.offerwall.sort.provider": "Survey Provider",
+                        "mobile.eg": "e.g.",
+                        "mobile.offerwall.languages.romanian": "Romanian",
+                        "mobile.warnings.openEndedMinLimit": "The answer should be at least XXX characters",
+                        "mobile.age.screen_out.subtitle": "You need to be at least X years old to be able to take surveys",
+                        "mobile.offerwall.languages.title": "Please select the languages in which you would like to take surveys",
+                        "mobile.matrixVanWestendorp.warnings.missingValue": "You need to type a number in the box to proceed.",
+                        "mobile.offerwall.notifications.pending": "Your response is pending verification",
+                        "mobile.warnings.numeric_with_max": "Your answer should be at most",
+                        "mobile.thank_you.subtitle": "Job well done",
+                        "mobile.offerwall.points": "Points",
+                        "mobile.invalidEmail": "Please enter a valid e-mail!",
+                        "mobile.offerwall.languages.english": "English",
+                        "mobile.offerwall.languages.punjabi": "Punjabi",
+                        "mobile.warnings.numeric_integer_only": "Your answer should be an integer",
+                        "mobile.selectLocation": "Select your location and continue",
+                        "mobile.loading.info": "We're looking for a new survey for you",
+                        "mobile.offerwall.history.rewarded": "Rewarded",
+                        "mobile.offerwall.survey.loading_more": "Loading more surveys",
+                        "mobile.submit": "Submit",
+                        "mobile.thank_you.incentive.already_email.hear_from_us": "You will hear from us via email if you win",
+                        "mobile.matrixVanWestendorp.warnings.max": "The value must be less than or equal to XXX",
+                        "mobile.offerwall.filters.all": "All",
+                        "mobile.gdpr.with_whom_option_three": "Mediation Platforms (i.e. third parties tendering their own surveys via Pollfish): We share with Mediation Partners only Automatically Received Data and anonymous sociodemographic Data. When you take a mediation survey, all relevant survey data are collected directly and solely by our Mediation Partners, in accordance with their terms of use - NOT Pollfish.",
+                        "mobile.gdpr.with_whom_option_one": "Researcher Clients (i.e. clients commissioning us to distribute their questionnaires and collect answers): We share with Researcher Clients only Automatically Received Data and Survey Data.",
+                        "mobile.offerwall.survey.not_found.subtitle": "Please check back later",
+                        "mobile.offerwall.offers.activities": "Activities",
+                        "mobile.gdpr.processed_data_option_two": "I also understand that my personal information will be processed outside of China in countries, including USA and EU (as the case may be) where Pollfish Researcher Clients or Mediation Partners, having commissioned us with the distribution of their Surveys, may be seated. For further information you can contact Pollfish any time.",
+                        "mobile.offerwall.languages.serbian": "Serbian",
+                        "mobile.offerwall.languages.arabic": "Arabic",
+                        "mobile.offerwall.offers.deviceTypes.save": "Save",
+                        "mobile.warnings.numeric_open": "You need to type a number in the box to proceed.",
+                        "mobile.offerwall.languages.dutch": "Dutch",
+                        "mobile.warnings.single": "You need to select an answer to proceed.",
+                        "mobile.offerwall.release_to_refresh": "Release to refresh",
+                        "mobile.offerwall.leaveSurvey.prompt": "Leave survey?",
+                        "mobile.warnings.matrix_multiple": "You need to select at least one answer per statement to proceed.",
+                        "mobile.offerwall.sort.highest_rating": "Highest Rating",
+                        "mobile.surveyPromptNoIncentive": "Share your opinion on things that matter!",
+                        "mobile.matrixVanWestendorp": "Please write in the box",
+                        "mobile.gdpr.with_whom": "With whom may we share your data?",
+                        "mobile.warnings.open_ended": "You need to type an answer in the box to proceed.",
+                        "mobile.offerwall.languages.danish": "Danish",
+                        "mobile.gdpr.with_whom_option_two": "Collaborating Advertisers and their agents (i.e. advertisers who serve actionable Ads displayed in the app you are using, via Pollfish): We share with Collaborating Advertisers only Automatically Received Data. When you interact with an Ad, any relevant data is collected directly and solely by the Collaborating Advertisers, in accordance with their terms of use - NOT Pollfish.",
+                        "mobile.cancel": "Back",
+                        "mobile.thank_you.incentive.already_email.title": "Feel the love!",
+                        "mobile.read_questions_carefully": "Make sure you read the questions carefully before answering",
+                        "mobile.offerwall.history.offer_history": "Offers",
+                        "mobile.warnings.verifyCustomZipcode": "You can proceed with XXXXX as a zip code, or try a different code near your location.",
+                        "mobile.gift_indicator": "Apple Google and Amazon are not a sponsor nor are involved in any way in this contest/draw. No Apple products are being used as prizes.",
+                        "mobile.bipolar.matrix": "Select a value per statement",
+                        "mobile.thank_you.non_incentive.title": "Thank you",
+                        "mobile.thank_you_screen.distribution_button_results": "See results",
+                        "mobile.gdpr.heading": "Your Data",
+                        "mobile.done": "Done",
+                        "mobile.gdpr.what_data_option_one": "Automatically received data: these are anonymous data received automatically when you use the app we are collaborating with, such as screen size, operating system, IP address etc. These may include your Advertising and/or Device ID, but only if you have enabled access to these, either through your system's settings or via a consent-prompt shown to you by the publisher of the app you are using.",
+                        "mobile.postal_data.prefer_not_to_say": "Prefer not to say",
+                        "mobile.gdpr.processed_data_option_three": "Further, I understand that my personal information will be processed outside of China in the following countries: USA, Canada, France, Romania, Israel, Pakistan and India by our Mediation Partner Toluna and its trustees IPGeo and IPQS.",
+                        "mobile.offerwall.notifications.congratulations": "Congratulations, you have earned ...",
+                        "mobile.inputNoMore": "Input should be no more than",
+                        "mobile.matrixNumericOpenEnded": "Please write in the boxes",
+                        "mobile.noSurvey": "There is no available survey",
+                        "mobile.offerwall.languages.russian": "Russian",
+                        "mobile.thank_you.incentive.new_email.title": "Wait",
+                        "mobile.offerwall.languages.indonesian": "Indonesian",
+                        "mobile.answers": "Answers",
+                        "mobile.offerwall.languages.urdu": "Urdu",
+                        "mobile.no": "No",
+                        "mobile.matrixVanWestendorp.warnings.orderDesc": "You need to provide a value which is less than the previous one",
+                        "mobile.noMore": "and no more than",
+                        "mobile.screen_out.not_active.subtitle": "This survey is not active",
+                        "mobile.offerwall.languages.filipino": "Filipino",
+                        "mobile.gdpr.processed_data_option_one": "I understand that my personal information will be processed outside of China, by Pollfish, in the following countries: USA and Greece.",
+                        "mobile.warnings.matrix_single": "You need to select a single answer per statement to proceed.",
+                        "mobile.NPSmax": "Extremely likely",
+                        "mobile.warnings.matrixNumericOpenEnded": "You need to type a number in the box to proceed.",
+                        "mobile.screen_out.already_taken.subtitle": "You have already taken this survey",
+                        "mobile.warnings.matrixConstantSumOpenEndedNote": "Total per category must be: XXXX",
+                        "mobile.offerwall.notifications.disqualified": "Unfortunately your response got disqualified",
+                        "mobile.offerwall.languages.korean": "Korean",
+                        "mobile.yeti.warnings.multiple_with_min": "You need to select at least {0} Answers",
+                        "mobile.warnings.matrixMaxDiff": "You need to select a \"XXX\" & \"YYY\" combination to proceed",
+                        "mobile.yeti.matrixVanWestendorp.warnings.max": "The value must be less than or equal to {0}",
+                        "mobile.offerwall.category.surveys": "Surveys",
+                        "mobile.offerwall.languages.turkish": "Turkish",
+                        "mobile.matrixConstantSumOpenEndedTotal": "Total: YYYY (remaining: XXXX)",
+                        "mobile.offerwall.languages.czech": "Czech",
+                        "mobile.thank_you.no_survey_available.title": "Wow",
+                        "mobile.offerwall.empty_history": "No surveys were conducted within the last 24 hours",
+                        "mobile.thank_you.no_offers_available.title": "Wow",
+                        "mobile.yes": "Yes",
+                        "mobile.rank": "Tap button to rank",
+                        "mobile.offerwall.languages.portugeseBrazil": "Portuguese (Brazil)",
+                        "mobile.if_you_win": "Enter your email to get in the draw",
+                        "mobile.offerwall.history.offersEmpty": "There is no activity on offers yet",
+                        "mobile.matrixConstinousSumOpenEndedTotal": "Total: YYYY",
+                        "mobile.offerwall.languages.slovak": "Slovak",
+                        "mobile.offerwall.history.help": "Do you have questions or need help?",
+                        "mobile.warnings.numeric_with_min": "Your answer should be at least",
+                        "mobile.offerwall.surveyCard.new": "New",
+                        "mobile.offerwall.history.pendingActivity": "Pending: XXXX",
+                        "mobile.warnings.matrixNumericOpenEndedRange": "Your answers should be between XXX and YYY",
+                        "mobile.offerwall.sort_by": "Sort by",
+                        "mobile.offerwall.languages.latvian": "Latvian",
+                        "mobile.by_accepting_this_survey": "By accepting to take this survey, a specific set of user's device data, is automatically sent to Pollfish servers and associated with answers to the questionnaires, in order for Pollfish to discern whether the user is eligible for a survey and improve targeting of future surveys.",
+                        "mobile.offerwall.languages.estonian": "Estonian",
+                        "mobile.selectNoMore": "Select no more than",
+                        "mobile.gdpr.managing_data_list_title": "You can at all times opt-out:",
+                        "mobile.offerwall.languages.norwegian": "Norwegian",
+                        "mobile.matrixMaxDiff": "Select a \"XXX\" & \"YYY\" combination",
+                        "mobile.offerwall.unlock_screen.btn_text": "Get started",
+                        "mobile.offerwall.languages.chinese": "Chinese",
+                        "mobile.offerwall.languages.romanUrdu": "Roman urdu",
+                        "mobile.no_thanks": "No thanks",
+                        "mobile.warnings.noZipcode": "Zip code not found",
+                        "mobile.offerwall.offers.not_found.subtitle": "Please check back later",
+                        "mobile.thank_you.non_incentive.subtitle": "We will review your responses soon",
+                        "mobile.offerwall.offers.not_found.title": "Looks like we are all out of offers for the moment",
+                        "mobile.surveyPrompt": "Answer a quick survey and get a chance to win a $20 amazon gift card.",
+                        "mobile.offerwall.notifications.survey_closed": "Unfortunately that survey is no longer available!",
+                        "mobile.warnings.other_open_ended": "You need to type an answer in the box to proceed.",
+                        "mobile.thank_you_screen.rate": "Rate this survey",
+                        "mobile.offerwall.languages.portugese": "Portuguese",
+                        "mobile.notify_terms": "Terms & Conditions",
+                        "mobile.offerwall.pull_to_refresh": "Pull down to refresh",
+                        "mobile.gdpr.privacy_policy": "For further detailed information please visit and read carefully Pollfish’s Privacy Policy at https://www.pollfish.com/terms/respondent",
+                        "mobile.close": "Close the survey",
+                        "mobile.yeti.warnings.numeric_with_max": "Your answer should be at most {0}",
+                        "mobile.gdpr.with_whom_text": "We may also share your data (including your communication and/or verification data) with state authorities or providers of services to us for our internal business organization, pursuit of legal interests and legal compliance. N.B.: If you have enabled access to your Advertising and/or Device ID (we may share these with our clients as listed above. Pollfish’s clients may themselves serve advertisements, conduct consumer profiling or target you online for their marketing campaigns.",
+                        "mobile.screen_out.title": "Tough luck",
+                        "mobile.gdpr.footer": "Your Call",
+                        "mobile.screen_out.payable.title": "You deserve a reward for your time",
+                        "mobile.thank_you.incentive.already_email.btn_copy": "Close the survey",
+                        "mobile.matrix": "Select one answer per statement",
+                        "mobile.offerwall.unlock_screen.title": "Unlock surveys",
+                        "mobile.offerwall.languages.uzbek": "Uzbek",
+                        "mobile.offerwall.languages.finish": "Finnish",
+                        "mobile.gdpr.what_data_header": "What data do we collect and process?",
+                        "mobile.opens_in_browser": "Opens in browser",
+                        "mobile.warnings.answers": "Answers",
+                        "mobile.notInterested": "Not interested",
+                        "mobile.date": "Please enter your year of birth",
+                        "mobile.warnings.matrixConstantSumOpenEndedMustTotal": "You have to allocate XXXX for each category",
+                        "mobile.scroll_down": "Scroll down to proceed.",
+                        "mobile.offerwall.history": "Rewards",
+                        "mobile.offerwall.offers.deviceTypes.cancel": "Cancel",
+                        "mobile.offerwall.languages.greek": "Greek",
+                        "mobile.yeti.warnings.numeric_with_min": "Your answer should be at least {0}",
+                        "mobile.offerwall.survey.load_more": "Load more surveys",
+                        "mobile.freeTextBox": "Write your answer here",
+                        "mobile.gdpr.managing_data_option_two": "From Pollfish sharing your personal data with clients for commercial purposes https://www.pollfish.com/do-not-sell-my-personal-information",
+                        "mobile.warnings.video": "You need to finish watching the video to proceed.",
+                        "mobile.loading.subtitle": "You've been screened out",
+                        "mobile.warnings.slider": "You need to slide the button to rate and proceed.",
+                        "mobile.offerwall.languages.french": "French",
+                        "mobile.yeti.warnings.multiple_with_max": "You cannot select more than {0} Answers",
+                        "mobile.offerwall.history.screened_out": "Screened out",
+                        "mobile.freeText": "Please write in the box",
+                        "mobile.gdpr.with_whom_option_four": "Other Clients, including Data Analysts, marketeers, Data brokers and advertisers:  We may share with them only Automatically Received Data and sociodemographic Data.",
+                        "mobile.thank_you_screen.continue": "Continue",
+                        "mobile.ok_btn": "OK",
+                        "mobile.screen_out.vpn.title": "It looks like you are behind an anonymous proxy",
+                        "mobile.inputAtLeast": "Input should be at least",
+                        "mobile.offerwall.history.offers.completed": "Completed",
+                        "mobile.offerwall.notifications.feedback_thank_you": "Thank you for your feedback!",
+                        "mobile.gdpr.i_agree": "I Agree",
+                        "mobile.offerwall.languages.lang": "Language",
+                        "mobile.warnings.max_decimals": "Your answer cannot have more than XXXX decimal places",
+                        "mobile.offerwall.unlock_screen.subtitle": "by completing your profile",
+                        "mobile.offerwall.languages.japanese": "Japanese",
+                        "mobile.android_notification": "By accepting to take this survey a specific set of user's device data including information about the apps which the user has installed is automatically sent to Pollfish servers and associated with answers to the questionnaires in order for Pollfish to discern whether the user is eligible for a survey and improve targeting of future surveys.",
+                        "mobile.offerwall.leaveSurvey.subtitle": "Do you still want to leave?",
+                        "mobile.thank_you.non_incentive.btn_copy": "Close the survey",
+                        "mobile.offerwall.history.offers.inProgress": "In progress",
+                        "mobile.noLocation": "I don't see my location",
+                        "mobile.tryAgain": "Try again",
+                        "mobile.offerwall.surveyCard.minutes": "min",
+                        "mobile.offerwall.offers.copy": "Copy",
+                        "mobile.offerwall.languages.albanian": "Albanian",
+                        "mobile.offerwall.history.pending": "Pending",
+                        "mobile.offerwall.languages.malay": "Malay",
+                        "mobile.choose_multiple": "Select all that apply",
+                        "mobile.offerwall.history.latestActivity": "Latest activity: XXXX",
+                        "mobile.loading.title": "Oops",
+                        "mobile.thank_you.incentive.new_email.subtitle": "There is more",
+                        "mobile.warnings.ranking": "You need to rank all entries to proceed.",
+                        "mobile.offerwall.sort.highest_reward": "Highest Reward",
+                        "mobile.gdpr.what_data_list_title": "We collect and process (and associate-correlate):",
+                        "mobile.warnings.invalid_age": "You need to enter a valid date to proceed.",
+                        "mobile.gdpr.what_data_option_four": "Verification data: in order for us to verify that a user is not a bot, we use phone verification procedures. You may be asked to voluntarily provide your phone number. You will then be sent an sms as part of the user-verification procedure. We will not share your phone number with any client of ours.",
+                        "mobile.back": "Back",
+                        "mobile.rate": "Tap stars to rate",
+                        "mobile.screen_out.subtitle": "You were not eligible for that survey, so no catnip for you",
+                        "mobile.choose_one": "Select one",
+                        "mobile.screen_out.vpn.subtitle": "We cannot accept responses while you are on this network",
+                        "mobile.description": "Description",
+                        "mobile.screen_out.targeting.subtitle": "Looks like the market researcher is looking for a very specific candidate",
+                        "mobile.schedule_offer.offer_ends": "Offer ends in",
+                        "mobile.offerwall.survey.choose": "Choose a survey to continue",
+                        "mobile.offerwall.languages.egyptian": "Egyptian",
+                        "mobile.sanity_description": "Carefully read all the questions and consider all the options before submitting the correct answers. If you fail to pass our quality controls while completing the survey the survey will be terminated immediately and you will be screened out.",
+                        "mobile.offerwall.general.terms": "By accepting to take this survey, a specific set of user's device data, is automatically sent to Pollfish servers and associated with answers to the questionnaires, in order for Pollfish to discern whether the user is eligible for a survey and improve targeting of future surveys.",
+                        "mobile.by_taking_survey": "By taking this survey you accept our",
+                        "mobile.take_survey_btn": "Start the survey",
+                        "mobile.thank_you.incentive.new_email.not_interested": "Thanks not interested",
+                        "mobile.language": "Language",
+                        "mobile.matrixVanWestendorp.warnings.min": "The value must be greater than or equal to XXX",
+                        "mobile.offerwall.history.quality": "Quality",
+                        "mobile.noMoreThan": "and no more than",
+                        "mobile.sanity.screen_out.title": "We needed more attention...",
+                        "mobile.offerwall.languages.georgian": "Georgian",
+                        "mobile.warnings.matrixNumericOpenEndedNote": "Required fields",
+                        "mobile.offerwall.sort.loi": "Length of Survey",
+                        "mobile.offerwall.error": "Something went wrong!",
+                        "mobile.offerwall.offers.completed_activities": "Completed activities",
+                        "mobile.offerwall.languages.thai": "Thai",
+                        "mobile.gdpr.what_data_text": "We are a US Company, GDPR compliant and Privacy Shield certified. Your data will be transferred to the US where we are headquartered.",
+                        "mobile.slider": "Drag button to rate",
+                        "mobile.offerwall.languages.lithuanian": "Lithuanian",
+                        "mobile.anonymous_responses": "Your responses are completely anonymous",
+                        "mobile.thank_you.no_survey_available.subtitle": "Someone ate all the surveys!",
+                        "mobile.schedule_offer.rewards": "Rewards",
+                        "mobile.offerwall.offers.paste": "Paste the URL into your mobile browser",
+                        "mobile.warnings.rating": "You need to tap on the Stars to rate and proceed.",
+                        "mobile.offerwall.sort.matching": "Best Matching",
+                        "mobile.thank_you_screen.distribution_button_redirect": "Done",
+                        "mobile.if_you_win_semiShort": "Submit your email to be entered into the draw",
+                        "mobile.offerwall.history.30_days": "30 Days",
+                        "mobile.offerwall.sort.whats_new": "What's New",
+                        "mobile.partial_reward": "Partial Reward",
+                        "mobile.offerwall.languages.azerbaijani": "Azerbaijani"
+                    }
+                },
+                "theme": {
+                    "custom_indicator": false,
+                    "custom_logo": false,
+                    "custom_won_indicator": false,
+                    "won_indicator_image_left": "",
+                    "won_indicator_image_right": "",
+                    "logo_image": "",
+                    "indicator_image_left": "",
+                    "indicator_image_right": "",
+                    "color_main_sel": -4126196,
+                    "color_main": -507324,
+                    "color_main_text": -1,
+                    "color_thank": -9910351,
+                    "color_info": -9906987,
+                    "color_thank_top": -7352897,
+                    "color_progress": -8855864,
+                    "style": 0
+                },
+                "response_type": "survey",
+                "lang": "en",
+                "user_lang": "en",
+                "incentive": false,
+                "allow_recruitment": false,
+                "allow_call_to_action": true,
+                "sdk_version": 9,
+                "has_email": false,
+                "publisherRevenue": 80,
+                "has_accepted_terms": false,
+                "origin_european_union": false,
+                "survey_class": "Pollfish",
+                "survey_ir": 40,
+                "survey_loi": 2,
+                "reward_settings_enabled": false,
+                "reward_name": "Points",
+                "reward_value": 80,
+                "reward_offer_enabled": false,
+                "withdraw_sig": "bYEuLh6e7v7WZiVF7cp0x%2Bc6gg6zjk7q%2BIF7hnpuc3vz1Y8HFrQR9sL8hn7%2FTAnvnrQBbFIW5PyCzdM4%2Fqj8u8qAfIHq0OsYY6Kcw4%2BRuUdBEKGCfYhUkGDdn1PFlagQNSAbVycJDxOepihO9bCPDBO7PQPXzAW1%2B2usS3r4wjc%3D",
+                "isAdditionalSurvey": false,
+                "url": "",
+                "sameWindow": false,
+                "raw": {
+                    "api_key": "8685bdec-f922-49d5-b7f9-58850c5c0a3a",
+                    "debug": "false",
+                    "offerwall": "false",
+                    "device_id": "P20c15527-dbcd-4ec9-a717-ef382e52fdb9",
+                    "timestamp": "1713048032316",
+                    "encryption": "NONE",
+                    "version": "9",
+                    "device_descr": "Nexus 5 ",
+                    "os": "0",
+                    "os_ver": "6.0",
+                    "scr_h": "528",
+                    "src_w": "650",
+                    "scr_size": "8.72319803900942",
+                    "manufacturer": "UNKNOWN",
+                    "locale": "en-US,en",
+                    "request_uuid": "",
+                    "click_id": "",
+                    "hardware_accelerated": "false",
+                    "video": "true",
+                    "always_return_content": true,
+                    "survey_format": "-1",
+                    "ip": "75.193.57.182"
+                },
+                "hasAllDemographics": false,
+                "tag_questions": [{
+                    "refId": "0e8e932a-3d59-442e-9056-c5b728990ee7",
+                    "id": 2,
+                    "f_name": "dg_year_of_birth",
+                    "prompt": "What is your year of birth?",
+                    "style": 0,
+                    "answers": [{
+                        "id": 34183,
+                        "f_value": "2009",
+                        "body": "> 2009",
+                        "next_q": 0,
+                        "disqualifies": true
+                    }, {
+                        "id": 34184,
+                        "f_value": "2008",
+                        "body": "2008",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34185,
+                        "f_value": "2007",
+                        "body": "2007",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34186,
+                        "f_value": "2006",
+                        "body": "2006",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34187,
+                        "f_value": "2005",
+                        "body": "2005",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34188,
+                        "f_value": "2004",
+                        "body": "2004",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34189,
+                        "f_value": "2003",
+                        "body": "2003",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34190,
+                        "f_value": "2002",
+                        "body": "2002",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34191,
+                        "f_value": "2001",
+                        "body": "2001",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34192,
+                        "f_value": "2000",
+                        "body": "2000",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34193,
+                        "f_value": "1999",
+                        "body": "1999",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34194,
+                        "f_value": "1998",
+                        "body": "1998",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34195,
+                        "f_value": "1997",
+                        "body": "1997",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34196,
+                        "f_value": "1996",
+                        "body": "1996",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34197,
+                        "f_value": "1995",
+                        "body": "1995",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34198,
+                        "f_value": "1994",
+                        "body": "1994",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34199,
+                        "f_value": "1993",
+                        "body": "1993",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34200,
+                        "f_value": "1992",
+                        "body": "1992",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34201,
+                        "f_value": "1991",
+                        "body": "1991",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34202,
+                        "f_value": "1990",
+                        "body": "1990",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34203,
+                        "f_value": "1989",
+                        "body": "1989",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34204,
+                        "f_value": "1988",
+                        "body": "1988",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34205,
+                        "f_value": "1987",
+                        "body": "1987",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34206,
+                        "f_value": "1986",
+                        "body": "1986",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34207,
+                        "f_value": "1985",
+                        "body": "1985",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34208,
+                        "f_value": "1984",
+                        "body": "1984",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34209,
+                        "f_value": "1983",
+                        "body": "1983",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34210,
+                        "f_value": "1982",
+                        "body": "1982",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34211,
+                        "f_value": "1981",
+                        "body": "1981",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34212,
+                        "f_value": "1980",
+                        "body": "1980",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34213,
+                        "f_value": "1979",
+                        "body": "1979",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34214,
+                        "f_value": "1978",
+                        "body": "1978",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34215,
+                        "f_value": "1977",
+                        "body": "1977",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34216,
+                        "f_value": "1976",
+                        "body": "1976",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34217,
+                        "f_value": "1975",
+                        "body": "1975",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34218,
+                        "f_value": "1974",
+                        "body": "1974",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34219,
+                        "f_value": "1973",
+                        "body": "1973",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34220,
+                        "f_value": "1972",
+                        "body": "1972",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34221,
+                        "f_value": "1971",
+                        "body": "1971",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34222,
+                        "f_value": "1970",
+                        "body": "1970",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34223,
+                        "f_value": "1969",
+                        "body": "1969",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34224,
+                        "f_value": "1968",
+                        "body": "1968",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34225,
+                        "f_value": "1967",
+                        "body": "1967",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34226,
+                        "f_value": "1966",
+                        "body": "1966",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34227,
+                        "f_value": "1965",
+                        "body": "1965",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34228,
+                        "f_value": "1964",
+                        "body": "1964",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34229,
+                        "f_value": "1963",
+                        "body": "1963",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34230,
+                        "f_value": "1962",
+                        "body": "1962",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34231,
+                        "f_value": "1961",
+                        "body": "1961",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34232,
+                        "f_value": "1960",
+                        "body": "1960",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34233,
+                        "f_value": "1959",
+                        "body": "1959",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34234,
+                        "f_value": "1958",
+                        "body": "1958",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34235,
+                        "f_value": "1957",
+                        "body": "1957",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34236,
+                        "f_value": "1956",
+                        "body": "1956",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34237,
+                        "f_value": "1955",
+                        "body": "1955",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34238,
+                        "f_value": "1954",
+                        "body": "1954",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34239,
+                        "f_value": "1953",
+                        "body": "1953",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34240,
+                        "f_value": "1952",
+                        "body": "1952",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34241,
+                        "f_value": "1951",
+                        "body": "1951",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34242,
+                        "f_value": "1950",
+                        "body": "1950",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34243,
+                        "f_value": "1949",
+                        "body": "1949",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34244,
+                        "f_value": "1948",
+                        "body": "1948",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34245,
+                        "f_value": "1947",
+                        "body": "1947",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34246,
+                        "f_value": "1946",
+                        "body": "1946",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34247,
+                        "f_value": "1945",
+                        "body": "1945",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34248,
+                        "f_value": "1944",
+                        "body": "1944",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34249,
+                        "f_value": "1943",
+                        "body": "1943",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34250,
+                        "f_value": "1942",
+                        "body": "1942",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34251,
+                        "f_value": "1941",
+                        "body": "1941",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34252,
+                        "f_value": "1940",
+                        "body": "1940",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34253,
+                        "f_value": "1939",
+                        "body": "1939",
+                        "next_q": 13,
+                        "disqualifies": false
+                    }, {
+                        "id": 34254,
+                        "f_value": "1938",
+                        "body": "< 1938",
+                        "next_q": 13,
+                        "disqualifies": true
+                    }]
+                }, {
+                    "refId": "e74f1875-3d4f-4a6d-a67e-98805f91f916",
+                    "id": 13,
+                    "f_name": "dg_speaking_langs",
+                    "prompt": "Please select the languages in which you would like to take surveys",
+                    "style": 1,
+                    "answers": [{
+                        "id": 45597,
+                        "f_value": "en",
+                        "body": "English",
+                        "next_q": 1,
+                        "disqualifies": false
+                    }, {
+                        "id": 45598,
+                        "f_value": "ar",
+                        "body": "Arabic",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45599,
+                        "f_value": "bg",
+                        "body": "Bulgarian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45600,
+                        "f_value": "zh",
+                        "body": "Chinese",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45601,
+                        "f_value": "cs",
+                        "body": "Czech",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45602,
+                        "f_value": "da",
+                        "body": "Danish",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45603,
+                        "f_value": "nl",
+                        "body": "Dutch",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45604,
+                        "f_value": "ph",
+                        "body": "Filipino",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45605,
+                        "f_value": "th",
+                        "body": "Thai",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45606,
+                        "f_value": "fi",
+                        "body": "Finnish",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45607,
+                        "f_value": "fr",
+                        "body": "French",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45608,
+                        "f_value": "de",
+                        "body": "German",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45609,
+                        "f_value": "el",
+                        "body": "Greek",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45610,
+                        "f_value": "hi",
+                        "body": "Hindi",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45611,
+                        "f_value": "id",
+                        "body": "Indonesian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45612,
+                        "f_value": "it",
+                        "body": "Italian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45613,
+                        "f_value": "ja",
+                        "body": "Japanese",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45614,
+                        "f_value": "pl",
+                        "body": "Polish",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45615,
+                        "f_value": "pt",
+                        "body": "Portuguese",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45616,
+                        "f_value": "ro",
+                        "body": "Romanian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45617,
+                        "f_value": "ru",
+                        "body": "Russian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45618,
+                        "f_value": "sr",
+                        "body": "Serbian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45619,
+                        "f_value": "es",
+                        "body": "Spanish",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45620,
+                        "f_value": "sv",
+                        "body": "Swedish",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45621,
+                        "f_value": "tr",
+                        "body": "Turkish",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 45622,
+                        "f_value": "vi",
+                        "body": "Vietnamese",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 47050,
+                        "f_value": "ko",
+                        "body": "Korean",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 47355,
+                        "f_value": "hu",
+                        "body": "Hungarian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 47661,
+                        "f_value": "zh-hant",
+                        "body": "Chinese Traditional",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 47969,
+                        "f_value": "no",
+                        "body": "Norwegian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 48279,
+                        "f_value": "eg",
+                        "body": "Egyptian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 48591,
+                        "f_value": "uk",
+                        "body": "Ukrainian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 48905,
+                        "f_value": "he",
+                        "body": "Hebrew",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 49221,
+                        "f_value": "bn",
+                        "body": "Bengali",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 49539,
+                        "f_value": "sk",
+                        "body": "Slovak",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 49859,
+                        "f_value": "fa",
+                        "body": "Persian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 50181,
+                        "f_value": "az",
+                        "body": "Azerbaijani",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 50505,
+                        "f_value": "ka",
+                        "body": "Georgian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 50831,
+                        "f_value": "lt",
+                        "body": "Lithuanian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 51159,
+                        "f_value": "pa",
+                        "body": "Punjabi",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 51489,
+                        "f_value": "ps",
+                        "body": "Pashto",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 51821,
+                        "f_value": "et",
+                        "body": "Estonian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 52155,
+                        "f_value": "uz",
+                        "body": "Uzbek",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 52544,
+                        "f_value": "lv",
+                        "body": "Latvian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 52882,
+                        "f_value": "ms",
+                        "body": "Malay",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 53221,
+                        "f_value": "ur",
+                        "body": "Urdu",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 55078,
+                        "f_value": "sq",
+                        "body": "Albanian",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }, {
+                        "id": 55444,
+                        "f_value": "ur-roman",
+                        "body": "Roman urdu",
+                        "next_q": 1,
+                        "disqualifies": true
+                    }]
+                }, {
+                    "refId": "923ebdc6-5549-41b1-82ca-4ec16d495497",
+                    "id": 1,
+                    "f_name": "gender",
+                    "prompt": "What is your gender?",
+                    "style": 0,
+                    "answers": [{
+                        "id": 34179,
+                        "f_value": "Male",
+                        "body": "Male",
+                        "next_q": 2138,
+                        "disqualifies": false
+                    }, {
+                        "id": 34180,
+                        "f_value": "Female",
+                        "body": "Female",
+                        "next_q": 2138,
+                        "disqualifies": false
+                    }, {
+                        "id": 54730,
+                        "f_value": "Other",
+                        "body": "Other",
+                        "next_q": 2138,
+                        "disqualifies": true
+                    }]
+                }, {
+                    "refId": "0886a754-5337-4fe3-9a42-d5392e52c08a",
+                    "id": 2138,
+                    "f_name": "dg_postal_data",
+                    "prompt": "What is your zip code?",
+                    "style": 10,
+                    "answers": [{
+                        "id": 52222,
+                        "f_value": "",
+                        "body": "",
+                        "next_q": 3,
+                        "disqualifies": false
+                    }]
+                }, {
+                    "refId": "84f7f650-69ff-4cdb-b53d-bdb8b236fe3c",
+                    "id": 3,
+                    "f_name": "marital_status",
+                    "prompt": "Please specify your current marital status.",
+                    "style": 0,
+                    "answers": [{
+                        "id": 34279,
+                        "f_value": "Divorced",
+                        "body": "Divorced",
+                        "next_q": 4,
+                        "disqualifies": false
+                    }, {
+                        "id": 34280,
+                        "f_value": "Living_with_partner",
+                        "body": "Living with partner",
+                        "next_q": 4,
+                        "disqualifies": false
+                    }, {
+                        "id": 34281,
+                        "f_value": "Separated",
+                        "body": "Separated",
+                        "next_q": 4,
+                        "disqualifies": false
+                    }, {
+                        "id": 34282,
+                        "f_value": "Single",
+                        "body": "Single",
+                        "next_q": 4,
+                        "disqualifies": false
+                    }, {
+                        "id": 34283,
+                        "f_value": "Widowed",
+                        "body": "Widowed",
+                        "next_q": 4,
+                        "disqualifies": false
+                    }, {
+                        "id": 34284,
+                        "f_value": "Married",
+                        "body": "Married",
+                        "next_q": 4,
+                        "disqualifies": false
+                    }, {
+                        "id": 34285,
+                        "f_value": "Prefer_not_to_say",
+                        "body": "Prefer not to say",
+                        "next_q": 4,
+                        "disqualifies": false
+                    }]
+                }, {
+                    "refId": "68f98873-8963-442b-a548-03f21613d2a7",
+                    "id": 4,
+                    "f_name": "dg_parental",
+                    "prompt": "How many children do you have?",
+                    "style": 0,
+                    "answers": [{
+                        "id": 34286,
+                        "f_value": "Zero",
+                        "body": "None",
+                        "next_q": 5,
+                        "disqualifies": false
+                    }, {
+                        "id": 34287,
+                        "f_value": "One",
+                        "body": "1",
+                        "next_q": 5,
+                        "disqualifies": false
+                    }, {
+                        "id": 34288,
+                        "f_value": "Two",
+                        "body": "2",
+                        "next_q": 5,
+                        "disqualifies": false
+                    }, {
+                        "id": 34289,
+                        "f_value": "Three",
+                        "body": "3",
+                        "next_q": 5,
+                        "disqualifies": false
+                    }, {
+                        "id": 34290,
+                        "f_value": "Four",
+                        "body": "4",
+                        "next_q": 5,
+                        "disqualifies": false
+                    }, {
+                        "id": 34291,
+                        "f_value": "Five",
+                        "body": "5",
+                        "next_q": 5,
+                        "disqualifies": false
+                    }, {
+                        "id": 34292,
+                        "f_value": "Six_or_more",
+                        "body": "6 or more",
+                        "next_q": 5,
+                        "disqualifies": false
+                    }, {
+                        "id": 34293,
+                        "f_value": "Prefer_not_to_say",
+                        "body": "Prefer not to say",
+                        "next_q": 5,
+                        "disqualifies": false
+                    }]
+                }, {
+                    "refId": "94107786-2e69-434d-8d48-189614d5981e",
+                    "id": 5,
+                    "f_name": "dg_education",
+                    "prompt": "Please specify the highest level of education you have completed.",
+                    "style": 0,
+                    "answers": [{
+                        "id": 34294,
+                        "f_value": "Middle_School",
+                        "body": "Middle school",
+                        "next_q": 6,
+                        "disqualifies": false
+                    }, {
+                        "id": 34295,
+                        "f_value": "High_School",
+                        "body": "High school",
+                        "next_q": 6,
+                        "disqualifies": false
+                    }, {
+                        "id": 34296,
+                        "f_value": "Vocational_Technical_College",
+                        "body": "Vocational/Technical college",
+                        "next_q": 6,
+                        "disqualifies": false
+                    }, {
+                        "id": 34297,
+                        "f_value": "University",
+                        "body": "University",
+                        "next_q": 6,
+                        "disqualifies": false
+                    }, {
+                        "id": 34298,
+                        "f_value": "PostGraduate",
+                        "body": "Post-graduate",
+                        "next_q": 6,
+                        "disqualifies": false
+                    }]
+                }, {
+                    "refId": "01ee1879-95c2-42e2-9254-7b7f29e5e4e7",
+                    "id": 6,
+                    "f_name": "dg_employment",
+                    "prompt": "Please choose what best describes your employment status.",
+                    "style": 0,
+                    "answers": [{
+                        "id": 34299,
+                        "f_value": "Employed_for_wages",
+                        "body": "Employed for wages",
+                        "next_q": 7,
+                        "disqualifies": false
+                    }, {
+                        "id": 34300,
+                        "f_value": "Self_employed",
+                        "body": "Self-employed",
+                        "next_q": 7,
+                        "disqualifies": true
+                    }, {
+                        "id": 34301,
+                        "f_value": "Unemployed_looking",
+                        "body": "Out of work and looking for work",
+                        "next_q": 7,
+                        "disqualifies": true
+                    }, {
+                        "id": 34302,
+                        "f_value": "Unemployed_not_looking",
+                        "body": "Out of work but not currently looking for work",
+                        "next_q": 7,
+                        "disqualifies": true
+                    }, {
+                        "id": 34303,
+                        "f_value": "Homemaker",
+                        "body": "Homemaker",
+                        "next_q": 7,
+                        "disqualifies": true
+                    }, {
+                        "id": 34304,
+                        "f_value": "Student",
+                        "body": "Student",
+                        "next_q": 7,
+                        "disqualifies": true
+                    }, {
+                        "id": 34305,
+                        "f_value": "Military",
+                        "body": "Military",
+                        "next_q": 7,
+                        "disqualifies": true
+                    }, {
+                        "id": 34306,
+                        "f_value": "Retired",
+                        "body": "Retired",
+                        "next_q": 7,
+                        "disqualifies": true
+                    }, {
+                        "id": 34307,
+                        "f_value": "Unable_to_work",
+                        "body": "Unable to work",
+                        "next_q": 7,
+                        "disqualifies": true
+                    }, {
+                        "id": 34308,
+                        "f_value": "Other",
+                        "body": "Other",
+                        "next_q": 7,
+                        "disqualifies": true
+                    }]
+                }, {
+                    "refId": "dbf8ac57-9e2e-49ec-bad0-31a35f3fc62b",
+                    "id": 7,
+                    "f_name": "dg_career",
+                    "prompt": "Please indicate which of the following best describes your primary area of employment.",
+                    "style": 0,
+                    "answers": [{
+                        "id": 34309,
+                        "f_value": "Agriculture_Forestry_Fishing_or_Hunting",
+                        "body": "Agriculture, Forestry, Fishing, or Hunting",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34310,
+                        "f_value": "Arts_Entertainment_or_Recreation",
+                        "body": "Arts, Entertainment, or Recreation",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34311,
+                        "f_value": "Broadcasting",
+                        "body": "Broadcasting",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34312,
+                        "f_value": "Construction",
+                        "body": "Construction",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34313,
+                        "f_value": "Education",
+                        "body": "Education",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34314,
+                        "f_value": "Finance_and_Insurance",
+                        "body": "Finance and Insurance",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34315,
+                        "f_value": "Government_and_Public_Administration",
+                        "body": "Government and Public Administration",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34316,
+                        "f_value": "Health_Care_And_Social_Assistance",
+                        "body": "Health Care and Social Assistance",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34317,
+                        "f_value": "Homemaker",
+                        "body": "Homemaker",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34318,
+                        "f_value": "Hotel_and_Food_Services",
+                        "body": "Hotel and Food Services",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34319,
+                        "f_value": "Information_Other",
+                        "body": "Information - Other",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34320,
+                        "f_value": "Information_Services_and_Data",
+                        "body": "Information - Services and Data",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34321,
+                        "f_value": "Legal_Services",
+                        "body": "Legal Services",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34322,
+                        "f_value": "Manufacturing_Computer_and_Electronics",
+                        "body": "Manufacturing - Computer and Electronics",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34323,
+                        "f_value": "Manufacturing_Other",
+                        "body": "Manufacturing - Other",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34324,
+                        "f_value": "Military",
+                        "body": "Military",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34326,
+                        "f_value": "Processing",
+                        "body": "Processing",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34327,
+                        "f_value": "Publishing",
+                        "body": "Publishing",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34328,
+                        "f_value": "Real_Estate_Rental_or_Leasing",
+                        "body": "Real Estate, Rental, or Leasing",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34329,
+                        "f_value": "Religious",
+                        "body": "Religious",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34330,
+                        "f_value": "Retail",
+                        "body": "Retail",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34332,
+                        "f_value": "Scientific_or_Technical_Services",
+                        "body": "Scientific or Technical Services",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34333,
+                        "f_value": "Software",
+                        "body": "Software",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34335,
+                        "f_value": "Telecommunications",
+                        "body": "Telecommunications",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34336,
+                        "f_value": "Transportation_and_Warehousing",
+                        "body": "Transportation and Warehousing",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34337,
+                        "f_value": "Utilities",
+                        "body": "Energy/Utilities/Oil and Gas",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34338,
+                        "f_value": "Wholesale",
+                        "body": "Wholesale",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 43205,
+                        "f_value": "Advertising",
+                        "body": "Advertising",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 43206,
+                        "f_value": "Automotive",
+                        "body": "Automotive",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 43207,
+                        "f_value": "Consulting",
+                        "body": "Consulting",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 43208,
+                        "f_value": "Fashion_Apparel",
+                        "body": "Fashion/Apparel",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 43209,
+                        "f_value": "Human_Resources",
+                        "body": "Human Resources",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 43210,
+                        "f_value": "Market_Research",
+                        "body": "Market Research",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 43211,
+                        "f_value": "Marketing_Sales",
+                        "body": "Marketing/Sales",
+                        "next_q": 8,
+                        "disqualifies": false
+                    }, {
+                        "id": 43212,
+                        "f_value": "Shipping_Distribution",
+                        "body": "Shipping/Distribution",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 43213,
+                        "f_value": "Personal_Services",
+                        "body": "Personal Services",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 43214,
+                        "f_value": "Security",
+                        "body": "Security",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }, {
+                        "id": 34339,
+                        "f_value": "Other",
+                        "body": "Other",
+                        "next_q": 8,
+                        "disqualifies": true
+                    }]
+                }, {
+                    "refId": "35079c71-5b5b-423f-a7b5-e537b09f0e82",
+                    "id": 8,
+                    "f_name": "dg_race",
+                    "prompt": "Please specify your ethnicity.",
+                    "style": 0,
+                    "answers": [{
+                        "id": 34340,
+                        "f_value": "Arab",
+                        "body": "Arab",
+                        "next_q": 9,
+                        "disqualifies": false
+                    }, {
+                        "id": 34341,
+                        "f_value": "Asian",
+                        "body": "Asian",
+                        "next_q": 9,
+                        "disqualifies": false
+                    }, {
+                        "id": 34342,
+                        "f_value": "Black",
+                        "body": "Black",
+                        "next_q": 9,
+                        "disqualifies": false
+                    }, {
+                        "id": 34343,
+                        "f_value": "White",
+                        "body": "White",
+                        "next_q": 9,
+                        "disqualifies": false
+                    }, {
+                        "id": 34344,
+                        "f_value": "Hispanic",
+                        "body": "Hispanic",
+                        "next_q": 9,
+                        "disqualifies": false
+                    }, {
+                        "id": 34345,
+                        "f_value": "Latino",
+                        "body": "Latino",
+                        "next_q": 9,
+                        "disqualifies": false
+                    }, {
+                        "id": 34346,
+                        "f_value": "Multiracial",
+                        "body": "Multiracial",
+                        "next_q": 9,
+                        "disqualifies": false
+                    }, {
+                        "id": 34347,
+                        "f_value": "Other",
+                        "body": "Other",
+                        "next_q": 9,
+                        "disqualifies": false
+                    }, {
+                        "id": 34348,
+                        "f_value": "Prefer_not_to_say",
+                        "body": "Prefer not to say",
+                        "next_q": 9,
+                        "disqualifies": false
+                    }]
+                }, {
+                    "refId": "02e8e876-f4f5-43ff-a8f8-f4c243497d35",
+                    "id": 9,
+                    "f_name": "dg_income",
+                    "prompt": "Please indicate your total household income.",
+                    "style": 0,
+                    "answers": [{
+                        "id": 53658,
+                        "f_value": "Lower_I",
+                        "body": "Under $25,000",
+                        "next_q": 11,
+                        "disqualifies": false
+                    }, {
+                        "id": 53656,
+                        "f_value": "Lower_II",
+                        "body": "Between $25,000 and $49,999",
+                        "next_q": 11,
+                        "disqualifies": false
+                    }, {
+                        "id": 53657,
+                        "f_value": "Middle_I",
+                        "body": "Between $50,000 and $74,999",
+                        "next_q": 11,
+                        "disqualifies": false
+                    }, {
+                        "id": 53659,
+                        "f_value": "Middle_II",
+                        "body": "Between $75,000 and $99,999",
+                        "next_q": 11,
+                        "disqualifies": false
+                    }, {
+                        "id": 53655,
+                        "f_value": "High_I",
+                        "body": "Between $100,000 and $124,999",
+                        "next_q": 11,
+                        "disqualifies": false
+                    }, {
+                        "id": 53661,
+                        "f_value": "High_II",
+                        "body": "Between $125,000 and $149,999",
+                        "next_q": 11,
+                        "disqualifies": false
+                    }, {
+                        "id": 53660,
+                        "f_value": "High_III",
+                        "body": "$150,000 or more",
+                        "next_q": 11,
+                        "disqualifies": false
+                    }, {
+                        "id": 53654,
+                        "f_value": "Prefer_not_to_say",
+                        "body": "Prefer not to say",
+                        "next_q": 11,
+                        "disqualifies": false
+                    }]
+                }, {
+                    "refId": "a84d1ea3-a9bd-4091-bdcb-3238dc087c4e",
+                    "id": 11,
+                    "f_name": "dg_organization_role",
+                    "prompt": "What is your primary role in your organization?",
+                    "style": 0,
+                    "answers": [{
+                        "id": 43605,
+                        "f_value": "Owner_Partner",
+                        "body": "Owner or Partner",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43606,
+                        "f_value": "President_CEO_Chairperson",
+                        "body": "President/CEO/Chairperson",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43607,
+                        "f_value": "C_level_executive",
+                        "body": "C-level executive",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43608,
+                        "f_value": "Middle_Management",
+                        "body": "Middle Management",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43609,
+                        "f_value": "Chief_Financial_Officer",
+                        "body": "Chief Financial Officer (CFO)",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43610,
+                        "f_value": "Chief_Technical_Officer",
+                        "body": "Chief Technical Officer (CTO)",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43611,
+                        "f_value": "Senior_Management",
+                        "body": "Senior Management",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43612,
+                        "f_value": "Director",
+                        "body": "Director",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43613,
+                        "f_value": "HR_Manager",
+                        "body": "HR Manager",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43614,
+                        "f_value": "Product_Manager",
+                        "body": "Product Manager",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43615,
+                        "f_value": "Supply_Manager",
+                        "body": "Supply Manager",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43616,
+                        "f_value": "Project_Management",
+                        "body": "Project Management",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43617,
+                        "f_value": "Business_Administrator",
+                        "body": "Business Administrator",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43618,
+                        "f_value": "Supervisor",
+                        "body": "Supervisor",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43619,
+                        "f_value": "Administrative_Clerical",
+                        "body": "Administrative/Clerical",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43620,
+                        "f_value": "Craftsman",
+                        "body": "Craftsman",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43621,
+                        "f_value": "Foreman",
+                        "body": "Foreman",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43622,
+                        "f_value": "Technical_Staff",
+                        "body": "Technical Staff",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43623,
+                        "f_value": "Sales_Staff",
+                        "body": "Sales Staff",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43624,
+                        "f_value": "Buyer_Purchasing_Agent",
+                        "body": "Buyer/Purchasing Agent",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43625,
+                        "f_value": "Other_Non_Management",
+                        "body": "Other non management staff",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }, {
+                        "id": 43627,
+                        "f_value": "Prefer_not_to_say",
+                        "body": "Prefer not to say",
+                        "next_q": 12,
+                        "disqualifies": false
+                    }]
+                }, {
+                    "refId": "5b6f95e2-61fd-4d0a-949f-afb83dc9fdf0",
+                    "id": 12,
+                    "f_name": "dg_number_of_employees",
+                    "prompt": "Approximately how many employees work at your organization (all locations)?",
+                    "style": 0,
+                    "answers": [{
+                        "id": 44778,
+                        "f_value": "One",
+                        "body": "1",
+                        "next_q": 0,
+                        "disqualifies": false
+                    }, {
+                        "id": 44779,
+                        "f_value": "Two_to_Five",
+                        "body": "2-5",
+                        "next_q": 0,
+                        "disqualifies": false
+                    }, {
+                        "id": 44780,
+                        "f_value": "Six_to_Ten",
+                        "body": "6-10",
+                        "next_q": 0,
+                        "disqualifies": false
+                    }, {
+                        "id": 44781,
+                        "f_value": "Eleven_to_TwentyFive",
+                        "body": "11-25",
+                        "next_q": 0,
+                        "disqualifies": false
+                    }, {
+                        "id": 44782,
+                        "f_value": "TwentySix_to_Fifty",
+                        "body": "26-50",
+                        "next_q": 0,
+                        "disqualifies": false
+                    }, {
+                        "id": 44783,
+                        "f_value": "FiftyOne_to_Hundrend",
+                        "body": "51-100",
+                        "next_q": 0,
+                        "disqualifies": false
+                    }, {
+                        "id": 44784,
+                        "f_value": "HundrendOne_to_TwoHundrendsFifty",
+                        "body": "101-250",
+                        "next_q": 0,
+                        "disqualifies": false
+                    }, {
+                        "id": 44785,
+                        "f_value": "TwoHundrendFiftyOne_to_FiveHundrends",
+                        "body": "251-500",
+                        "next_q": 0,
+                        "disqualifies": false
+                    }, {
+                        "id": 44786,
+                        "f_value": "FiveHundrendsOne_to_Thousand",
+                        "body": "501-1000",
+                        "next_q": 0,
+                        "disqualifies": false
+                    }, {
+                        "id": 44787,
+                        "f_value": "ThousandOne_to_FiveThousands",
+                        "body": "1001-5000",
+                        "next_q": 0,
+                        "disqualifies": false
+                    }, {
+                        "id": 44788,
+                        "f_value": "Greater_than_FiveThousands",
+                        "body": "Greater than 5000",
+                        "next_q": 0,
+                        "disqualifies": false
+                    }, {
+                        "id": 44789,
+                        "f_value": "Do_not_work",
+                        "body": "I don't work",
+                        "next_q": 0,
+                        "disqualifies": false
+                    }, {
+                        "id": 44790,
+                        "f_value": "Prefer_not_to_say",
+                        "body": "Prefer not to say",
+                        "next_q": 0,
+                        "disqualifies": false
+                    }]
+                }],
+                "profiling_questions": [],
+                "custom_init": false,
+                "device_info": {
+                    "version": 0,
+                    "host": "http://wss.pollfish.com"
+                },
+                "isRouterDisabled": false,
+                "session_id": "33af4575-c899-5360-8fad-953f74a659e8",
+                "questionnaireLogic": {
+                    "entryPoint": {
+                        "statements": [{
+                            "id": "aed0a7b0-f28b-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "aed05990-f28b-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    },
+                    "questionnaire": {
+                        "nodes": [{
+                            "id": "aed05990-f28b-11ee-a57e-0ba2b8a201b3",
+                            "answers": [{
+                                "id": "aedbcb40-f28b-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "afa9c9a0-f28b-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "bdcb5760-f28b-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "d8018be0-f28b-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "dc406e10-f28b-11ee-a57e-0ba2b8a201b3"
+                            }]
+                        }, {
+                            "id": "e20bbca3-f28b-11ee-a57e-0ba2b8a201b3",
+                            "answers": []
+                        }, {
+                            "id": "f7eaa4f0-f28b-11ee-a57e-0ba2b8a201b3",
+                            "answers": [{
+                                "id": "f7fdb7c0-f28b-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "8f0f4570-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "9273cd30-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "96ea1310-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "9a657e30-f28c-11ee-a57e-0ba2b8a201b3"
+                            }]
+                        }, {
+                            "id": "a0115de0-f28c-11ee-a57e-0ba2b8a201b3",
+                            "answers": [{
+                                "id": "a0250cf0-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "a66b57e0-f28c-11ee-a57e-0ba2b8a201b3"
+                            }]
+                        }, {
+                            "id": "affdc090-f28c-11ee-a57e-0ba2b8a201b3",
+                            "answers": [{
+                                "id": "b01ba8d0-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "b52e7cd0-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "b8e1c0d0-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "bca669f0-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "c1b8efd0-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "c676ed10-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "ca1f82b0-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "cf6881e0-f28c-11ee-a57e-0ba2b8a201b3"
+                            }]
+                        }, {
+                            "id": "bd19a8b0-f28d-11ee-a57e-0ba2b8a201b3",
+                            "answers": [{
+                                "id": "bd36a690-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "c6ba1b20-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "c9bd7010-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "cc734140-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "cf491d90-f28d-11ee-a57e-0ba2b8a201b3"
+                            }]
+                        }, {
+                            "id": "d6b98610-f28c-11ee-a57e-0ba2b8a201b3",
+                            "answers": [{
+                                "id": "d6d23e30-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "db8f02f0-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "dfae0110-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "e3689810-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "e6deac00-f28c-11ee-a57e-0ba2b8a201b3"
+                            }]
+                        }, {
+                            "id": "f08cda10-f28c-11ee-a57e-0ba2b8a201b3",
+                            "answers": [{
+                                "id": "f0a60760-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "f7e75420-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "faf9c440-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "fe0d45d0-f28c-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "0249b700-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "05e1d1e0-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "09e5cdf0-f28d-11ee-a57e-0ba2b8a201b3"
+                            }]
+                        }, {
+                            "id": "17b236d0-f28d-11ee-a57e-0ba2b8a201b3",
+                            "answers": [{
+                                "id": "17cb3d10-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "1d843c20-f28d-11ee-a57e-0ba2b8a201b3"
+                            }]
+                        }, {
+                            "id": "2639b250-f28d-11ee-a57e-0ba2b8a201b3",
+                            "answers": [{
+                                "id": "264f3620-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "2ab01f40-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "2dfa1a20-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "30e3f3a0-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "33ae3730-f28d-11ee-a57e-0ba2b8a201b3"
+                            }]
+                        }, {
+                            "id": "4d2cb470-f28d-11ee-a57e-0ba2b8a201b3",
+                            "answers": [{
+                                "id": "5b861b10-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "5b861b11-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "6547aa10-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "6582b740-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "65c05c80-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "66305c60-f28d-11ee-a57e-0ba2b8a201b3"
+                            }],
+                            "scorepoints": [{
+                                "id": "5b861b12-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "5b861b13-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "6b13bbf0-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "6b3a7dd0-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "6b5cf9f0-f28d-11ee-a57e-0ba2b8a201b3"
+                            }]
+                        }, {
+                            "id": "f51ad130-f28d-11ee-a57e-0ba2b8a201b3",
+                            "answers": [{
+                                "id": "f53a4010-f28d-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "f71baa40-f28d-11ee-a57e-0ba2b8a201b3"
+                            }]
+                        }, {
+                            "id": "00e7e7a0-f28e-11ee-a57e-0ba2b8a201b3",
+                            "answers": [{
+                                "id": "00fea3f0-f28e-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "043f01e0-f28e-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "0b00e570-f28e-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "0d625510-f28e-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "0f881b40-f28e-11ee-a57e-0ba2b8a201b3"
+                            }, {
+                                "id": "1110b710-f28e-11ee-a57e-0ba2b8a201b3"
+                            }]
+                        }],
+                        "surveyId": 387440571
+                    },
+                    "nodeStatements": [{
+                        "nodeId": "aed05990-f28b-11ee-a57e-0ba2b8a201b3",
+                        "statements": [{
+                            "id": "aed0a7b1-f28b-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "e20bbca3-f28b-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    }, {
+                        "nodeId": "e20bbca3-f28b-11ee-a57e-0ba2b8a201b3",
+                        "statements": [{
+                            "id": "e20be3b0-f28b-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "f7eaa4f0-f28b-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    }, {
+                        "nodeId": "f7eaa4f0-f28b-11ee-a57e-0ba2b8a201b3",
+                        "statements": [{
+                            "id": "f7eaa4f0-f28b-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "a0115de0-f28c-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    }, {
+                        "nodeId": "a0115de0-f28c-11ee-a57e-0ba2b8a201b3",
+                        "statements": [{
+                            "id": "a01184f0-f28c-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "affdc090-f28c-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    }, {
+                        "nodeId": "affdc090-f28c-11ee-a57e-0ba2b8a201b3",
+                        "statements": [{
+                            "id": "5c7c4572-f28e-11ee-abdc-533f5cf478e1",
+                            "rule": {
+                                "id": "6583ac30-f28e-11ee-abdc-533f5cf478e1",
+                                "operator": "any",
+                                "conditions": [{
+                                    "id": "5c7c4571-f28e-11ee-abdc-533f5cf478e1",
+                                    "operator": "any",
+                                    "conditions": [{
+                                        "id": "605f9a20-f28e-11ee-abdc-533f5cf478e1",
+                                        "value": "b01ba8d0-f28c-11ee-a57e-0ba2b8a201b3",
+                                        "context": {
+                                            "valueType": "string",
+                                            "questionId": "affdc090-f28c-11ee-a57e-0ba2b8a201b3",
+                                            "contextType": "AnswerConditionContext"
+                                        },
+                                        "matcher": "equal"
+                                    }]
+                                }, {
+                                    "id": "657fb491-f28e-11ee-abdc-533f5cf478e1",
+                                    "operator": "any",
+                                    "conditions": [{
+                                        "id": "6eb3f7b0-f28e-11ee-abdc-533f5cf478e1",
+                                        "value": "b52e7cd0-f28c-11ee-a57e-0ba2b8a201b3",
+                                        "context": {
+                                            "valueType": "string",
+                                            "questionId": "affdc090-f28c-11ee-a57e-0ba2b8a201b3",
+                                            "contextType": "AnswerConditionContext"
+                                        },
+                                        "matcher": "equal"
+                                    }]
+                                }, {
+                                    "id": "72e3e5c1-f28e-11ee-abdc-533f5cf478e1",
+                                    "operator": "any",
+                                    "conditions": [{
+                                        "id": "762ef210-f28e-11ee-abdc-533f5cf478e1",
+                                        "value": "b8e1c0d0-f28c-11ee-a57e-0ba2b8a201b3",
+                                        "context": {
+                                            "valueType": "string",
+                                            "questionId": "affdc090-f28c-11ee-a57e-0ba2b8a201b3",
+                                            "contextType": "AnswerConditionContext"
+                                        },
+                                        "matcher": "equal"
+                                    }]
+                                }, {
+                                    "id": "7abeb361-f28e-11ee-abdc-533f5cf478e1",
+                                    "operator": "any",
+                                    "conditions": [{
+                                        "id": "7e213f50-f28e-11ee-abdc-533f5cf478e1",
+                                        "value": "bca669f0-f28c-11ee-a57e-0ba2b8a201b3",
+                                        "context": {
+                                            "valueType": "string",
+                                            "questionId": "affdc090-f28c-11ee-a57e-0ba2b8a201b3",
+                                            "contextType": "AnswerConditionContext"
+                                        },
+                                        "matcher": "equal"
+                                    }]
+                                }, {
+                                    "id": "86edbff0-f28e-11ee-abdc-533f5cf478e1",
+                                    "operator": "any",
+                                    "conditions": [{
+                                        "id": "8a4fd6b0-f28e-11ee-abdc-533f5cf478e1",
+                                        "value": "c1b8efd0-f28c-11ee-a57e-0ba2b8a201b3",
+                                        "context": {
+                                            "valueType": "string",
+                                            "questionId": "affdc090-f28c-11ee-a57e-0ba2b8a201b3",
+                                            "contextType": "AnswerConditionContext"
+                                        },
+                                        "matcher": "equal"
+                                    }]
+                                }, {
+                                    "id": "b5770ca1-f28e-11ee-abdc-533f5cf478e1",
+                                    "operator": "any",
+                                    "conditions": [{
+                                        "id": "b8e690e0-f28e-11ee-abdc-533f5cf478e1",
+                                        "value": "c676ed10-f28c-11ee-a57e-0ba2b8a201b3",
+                                        "context": {
+                                            "valueType": "string",
+                                            "questionId": "affdc090-f28c-11ee-a57e-0ba2b8a201b3",
+                                            "contextType": "AnswerConditionContext"
+                                        },
+                                        "matcher": "equal"
+                                    }]
+                                }]
+                            },
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "bd19a8b0-f28d-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }, {
+                            "id": "affde7a0-f28c-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "d6b98610-f28c-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    }, {
+                        "nodeId": "bd19a8b0-f28d-11ee-a57e-0ba2b8a201b3",
+                        "statements": [{
+                            "id": "bd1a1de0-f28d-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "d6b98610-f28c-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    }, {
+                        "nodeId": "d6b98610-f28c-11ee-a57e-0ba2b8a201b3",
+                        "statements": [{
+                            "id": "d6b9d430-f28c-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "f08cda10-f28c-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    }, {
+                        "nodeId": "f08cda10-f28c-11ee-a57e-0ba2b8a201b3",
+                        "statements": [{
+                            "id": "f08d4f40-f28c-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "17b236d0-f28d-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    }, {
+                        "nodeId": "17b236d0-f28d-11ee-a57e-0ba2b8a201b3",
+                        "statements": [{
+                            "id": "17b25de0-f28d-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "2639b250-f28d-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    }, {
+                        "nodeId": "2639b250-f28d-11ee-a57e-0ba2b8a201b3",
+                        "statements": [{
+                            "id": "2639b250-f28d-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "4d2cb470-f28d-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    }, {
+                        "nodeId": "4d2cb470-f28d-11ee-a57e-0ba2b8a201b3",
+                        "statements": [{
+                            "id": "5b729310-f28d-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "f51ad130-f28d-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    }, {
+                        "nodeId": "f51ad130-f28d-11ee-a57e-0ba2b8a201b3",
+                        "statements": [{
+                            "id": "1fccb010-f28e-11ee-abdc-533f5cf478e1",
+                            "rule": {
+                                "id": "1fcc8901-f28e-11ee-abdc-533f5cf478e1",
+                                "operator": "any",
+                                "conditions": [{
+                                    "id": "2603b8c0-f28e-11ee-abdc-533f5cf478e1",
+                                    "value": "f71baa40-f28d-11ee-a57e-0ba2b8a201b3",
+                                    "context": {
+                                        "valueType": "string",
+                                        "questionId": "f51ad130-f28d-11ee-a57e-0ba2b8a201b3",
+                                        "contextType": "AnswerConditionContext"
+                                    },
+                                    "matcher": "equal"
+                                }]
+                            },
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "00e7e7a0-f28e-11ee-a57e-0ba2b8a201b3"
+                                },
+                                "reason": ""
+                            }
+                        }, {
+                            "id": "f51b1f50-f28d-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "0"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    }, {
+                        "nodeId": "00e7e7a0-f28e-11ee-a57e-0ba2b8a201b3",
+                        "statements": [{
+                            "id": "00e80eb0-f28e-11ee-abdc-533f5cf478e1",
+                            "outcome": {
+                                "type": "Success",
+                                "params": {
+                                    "id": "0"
+                                },
+                                "reason": ""
+                            }
+                        }]
+                    }]
+                },
+                "remaining_completes": 3,
+                "questionGroupShuffle": 0,
+                "distribution_id": "MTcxMzA0ODAzMzg2NkA=:rywUdVEOSdeaPEaIpb34v6SQB6w=",
+                "thirdPartyComplete": null,
+                "captchaSiteKey": "d019b302-04e1-4b34-83f7-ab28aadc52fc",
+                "captchaProvider": "hcaptcha",
+                "hasCustomTerms": false,
+                "is_external_audience": false,
+                "isPollfishNetwork": true,
+                "surveyTheme": {
+                    "name": "Pollfish theme",
+                    "settings": {
+                        "logoUrl": "",
+                        "buttonColor": "rgba(46,105,240,1)",
+                        "answerUiColor": "rgba(232,235,239,1)",
+                        "promptBoxColor": "rgba(255,255,255,1)",
+                        "questionsColor": "rgba(51,57,68,1)",
+                        "answerTextColor": "rgba(51,57,68,1)",
+                        "backgroundColor": "rgba(249,250,252,1)",
+                        "buttonColorIcon": "rgba(255,255,255,1)",
+                        "progressBarColor": "rgba(46,105,240,1)",
+                        "progressBarEnabled": true,
+                        "answerBackgroundColor": "rgba(255,255,255,1)",
+                        "answerUiColorSelected": "rgba(46,105,240,1)",
+                        "headerBackgroundColor": "rgba(255,255,255,1)",
+                        "answerTextColorSecondary": "rgba(51,57,68,1)",
+                        "promptBoxBackgroundColor": "rgba(251,59,113,1)",
+                        "progressBarBackgroundColor": "rgba(232,235,239,1)",
+                        "answerBackgroundColorSelected": "rgba(230,239,255,1)"
+                    },
+                    "isDefault": true,
+                    "isSelected": true,
+                    "id": 1,
+                    "isPollfish": true
+                },
+                "hideHomescreen": false
+            }, Pollfish.helper.html.deviceInfo = {
+                "version": "17",
+                "language": "en",
+                "host": "pollfish-appserver1:9000",
+                "position": "1",
+                "hasaccepted": "true"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="wrapper__holder">
+            <div class="header" data-role="header" data-tap-toggle="false">
+                <div class="header__container container flex flex-align-items--center">
+                    <div class="header__actions-left">
+                        <div class="header__action"><a href="#" class="header__action-btn color-text header__action-close-btn"></a> <a href="#" class="header__action-btn color-text header__action-move-back-btn" data-testid="back-button"></a></div>
+                    </div>
+                    <div class="header__logo"></div>
+                    <div class="header__actions-right">
+                        <div class="header__action-language-select" id="js-languageSelect"></div>
+                        <div class="divider vertical"></div>
+                        <div class="header__action"><a href="#" class="header__action-btn color-text header__action-refresh-btn"></a></div>
+                    </div>
+                </div>
+            </div>
+            <main class="main">
+                <div class="main-content"></div>
+            </main>
+        </div>
+    </div>
+    <div class="terms-and-conditions__footer">
+        <div class="terms-btn-container"><a href="#" class="btn btn-primary btn-lg js-take-survey-btn">take survey</a></div>
+    </div>
+    <div class="gdpr-footer gdpr-footer--outer">
+        <div class="gdpr-btn-container">
+            <h1 class="js-gdpr-footer">Your call</h1><a href="#" class="btn btn-primary btn-lg js-agree-to-gdpr">Agree</a> <a href="#" class="js-decline-gdpr btn-link">I will not participate</a></div>
+    </div>
+    <div id="promptInfo" class="prompt-info">
+        <div class="prompt-info__text"></div>
+    </div>
+    <div id="js-leave-survey-modal" class="modal">
+        <div class="modal-content container text-align-center">
+            <div class="modal-header">
+                <h2 class="js-modal-header flex-1 margin-reset">Leave survey?</h2>
+            </div>
+            <div class="modal-body">
+                <p class="js-modal-body margin-md">Once you leave this survey, you won't be able to try it again<br>Do you still want to leave?</p><a href="#" class="js-modal-cancel btn btn-primary btn-sm margin-xs-horizontal">No</a> <a href="#" class="js-modal-confirm btn btn-secondary btn-sm margin-xs-horizontal">Yes</a></div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div id="language-select-modal"></div>
+    <div id="image-lightbox" class="image-lightbox"><button class="close-btn"><span class="icon-close"></span></button>
+        <div class="overlay"></div>
+        <div class="animated-container">
+            <div class="image-container"><img src="" alt=""></div>
+        </div>
+    </div>
+    <div id="overlay-spinner"></div>
+    <div id="verification"></div>
+    <div id="offerwall-popup-container"></div>
+    <div id="survey-ad"></div>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+chrome-extension://jajikjbellknnfcomfjjinfjokihcfoi/rulesets/scripting/scriptlet/default.trusted-set-constant.js
